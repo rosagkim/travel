@@ -8,10 +8,9 @@
   },
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "check": "node --check src/main.js && node --check src/site.config.js && node --check scripts/publish-pages.mjs && node scripts/check-plans.mjs",
+    "check": "node --check src/main.js && node --check src/site.config.js && node scripts/check-plans.mjs",
     "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0",
-    "deploy": "npm run check && npm run build && node scripts/publish-pages.mjs"
+    "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {
     "dompurify": "3.4.17",

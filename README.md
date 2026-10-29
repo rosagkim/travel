@@ -47,22 +47,14 @@ main 커밋 · 푸시
        ↓
 GitHub Actions: npm ci → check → build
        ↓
-dist/를 github-pages 브랜치에 푸시
+dist/를 Actions 아티팩트로 전달
        ↓
 GitHub Pages 배포
 ```
 
-`GITHUB_TOKEN`으로 만든 푸시는 후속 워크플로를 실행하지 않으므로, main 워크플로가 빌드 결과를 푸시한 뒤 Pages 배포까지 직접 수행합니다. 별도 PAT 시크릿은 필요하지 않습니다.
+main의 소스를 GitHub Actions가 빌드하고 공식 Pages 액션으로 직접 배포합니다. 빌드 결과를 저장하는 별도 브랜치나 PAT 시크릿은 필요하지 않습니다. 평소에는 main에 커밋하고 푸시하면 됩니다.
 
-로컬에서 빌드 후 `github-pages`에 직접 푸시하는 경로도 지원합니다.
-
-```sh
-npm run deploy
-```
-
-이 명령은 검증·빌드 후 `github-pages`에 결과물을 푸시하고, 그 브랜치의 `Deploy built branch` 워크플로가 배포합니다. 현재 로컬 소스를 배포하므로 평소에는 main 커밋·푸시 흐름을 권장합니다.
-
-최초 설정 시 GitHub 저장소의 **Settings → Pages → Build and deployment → Source**를 **GitHub Actions**로 설정합니다. `github-pages`는 결과물을 보관하는 브랜치이며, Pages 배포 자체는 공식 Actions를 사용합니다. 최초 브랜치 생성은 워크플로 파일을 쓸 수 있는 사용자 권한으로 `npm run deploy`를 한 번 실행합니다. 이후 자동 배포는 기본 `GITHUB_TOKEN`을 사용합니다.
+이 저장소의 Pages Source는 **GitHub Actions**입니다. 다른 저장소로 복사할 때는 **Settings → Pages → Build and deployment → Source**에서 같은 값을 선택합니다. 워크플로의 `github-pages`는 배포 환경 이름입니다.
 
 실패 시 [Actions](https://github.com/rosagkim/travel/actions)에서 실패한 단계를 확인합니다. 검증 또는 빌드가 실패하면 기존 배포가 유지됩니다. Pages 환경에 별도 승인 규칙이 있다면 자동 배포가 해당 규칙을 따릅니다.
 
@@ -74,7 +66,7 @@ Pages가 비활성화되어 `Failed to create deployment (status: 404)`가 발�
 plan/                  서비스 기획 마크다운 (사이트에도 공개)
 src/                   화면, 스타일, 서비스 설정
 public/                파비콘과 정적 파일
-scripts/               기획 검증, 빌드 브랜치 게시
+scripts/               기획 문서 검증
 .github/workflows/     검증 및 GitHub Pages 자동 배포
 AGENTS.md              이후 작업 시 따를 기획·수정·배포 규칙
 ```

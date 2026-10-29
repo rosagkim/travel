@@ -16,8 +16,6 @@ jobs:
   build:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
@@ -27,8 +25,6 @@ jobs:
       - run: npm ci
       - run: npm run check
       - run: npm run build
-      - name: Push built site to github-pages
-        run: node scripts/publish-pages.mjs
       - uses: actions/upload-pages-artifact@v5
         with:
           path: dist
@@ -43,6 +39,8 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v6
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5

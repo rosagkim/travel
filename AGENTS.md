@@ -14,8 +14,8 @@
 
 - `src/site.config.js`: 서비스 이름, 소개, 저장소 링크.
 - `plan/`: 서비스 개요, 요구사항, 화면, 로드맵, 의사결정. 새 문서는 `06-feature-name.md`처럼 번호를 붙이면 자동 표시된다.
-- `.github/workflows/deploy.yml`: main 검증 → 빌드 → github-pages 푸시 → Pages 배포.
-- `github-pages`: 생성된 파일과 브랜치 배포 워크플로만 보관한다. 서비스 소스를 이 브랜치에서 고치지 않는다.
-- 브랜치의 `publish-built.yml`은 자동 푸시에서 보존된다. 이 워크플로를 수정하면 최초 설정과 같은 권한을 가진 사용자 자격으로 해당 브랜치 파일도 명시적으로 갱신한다.
+- `.github/workflows/deploy.yml`: main 푸시 → 검증 → 빌드 → GitHub Pages 직접 배포.
+- 소스와 기획은 `main`에서 관리한다. 빌드 결과는 Actions 아티팩트로 전달하고 별도 배포 브랜치를 생성하지 않는다.
+- 워크플로의 `github-pages`는 GitHub 배포 환경 이름이다. 브랜치 이름으로 사용하지 않는다.
 - `work/`: 임시 파일. 커밋하지 않는다.
 - 비밀키, 개인 정보, 내부 전용 기획을 `plan/`이나 프런트엔드 코드에 넣지 않는다.

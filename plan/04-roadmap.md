@@ -8,9 +8,10 @@
 - [x] 기본 사이트와 서비스 설정 파일
 - [x] 마크다운 문서 표시와 검색
 - [x] 반응형 화면과 기본 접근성
-- [x] main → 빌드 → github-pages → Pages 자동 배포 구성
+- [x] main → 검증·빌드 → Pages 직접 배포 구성
 - [x] 이후 수정 작업을 위한 AGENTS.md와 사용 안내
-- [ ] 최초 GitHub Pages 활성화 후 공개 사이트 응답 확인
+- [x] GitHub Pages Source가 GitHub Actions로 활성화된 상태 확인
+- [ ] main 직접 배포 후 공개 사이트 응답 확인
 
 ## 02 · 서비스 정의
 
