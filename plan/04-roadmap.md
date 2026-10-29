@@ -11,7 +11,7 @@
 - [x] main → 검증·빌드 → Pages 직접 배포 구성
 - [x] 이후 수정 작업을 위한 AGENTS.md와 사용 안내
 - [x] GitHub Pages Source가 GitHub Actions로 활성화된 상태 확인
-- [ ] main 직접 배포 후 공개 사이트 응답 확인
+- [x] main 직접 배포 후 공개 사이트 응답 확인
 
 ## 02 · 서비스 정의
 
