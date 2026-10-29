@@ -66,6 +66,8 @@ npm run deploy
 
 실패 시 [Actions](https://github.com/rosagkim/travel/actions)에서 실패한 단계를 확인합니다. 검증 또는 빌드가 실패하면 기존 배포가 유지됩니다. Pages 환경에 별도 승인 규칙이 있다면 자동 배포가 해당 규칙을 따릅니다.
 
+Pages가 비활성화되어 `Failed to create deployment (status: 404)`가 발생하면 위 Source 설정을 완료한 뒤 Actions의 **Build and deploy → Re-run failed jobs**를 실행합니다. 이 경우 이미 성공한 빌드를 다시 수행하지 않고 배포 단계만 재시도합니다.
+
 ## 구조
 
 ```text
