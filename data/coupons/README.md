@@ -13,6 +13,6 @@
 - `redemption`: 원본 사용 경로와 검수한 단계. 목록의 `ALL`은 검수한 모든 사용 경로를 의미하지 않아 `unknown`으로 둔다. `BOOKING`만 예약 경로로 보존한다.
 - `review`: `needs-review`, `verified`, `expired`, `unavailable`. `checkedAt`과 상세 근거 URL은 목록 확인 시각과 구분한다.
 
-`src/lib/coupons.mjs`가 필수 구조와 중복을 검사한다. `publicationIssues()`는 상세 검수·기한·사용 안내·외국인 요건·검수 최신성을 확인한다. 공개 목록을 만드는 후속 구현은 반드시 이 검사를 통과한 데이터만 사용해야 한다. 전화번호 필요 여부 등을 알 수 없다는 이유로 무조건 외국인 사용 불가로 판단하지 않는다.
+`src/lib/coupons.mjs`가 필수 구조와 중복을 검사한다. `publicationIssues()`는 상세 검수·기한·사용 안내·외국인 요건·검수 최신성을 확인한다. 검수 완료 목록에는 반드시 이 검사를 통과한 데이터만 사용한다. D-007에 따라 일반 탐색 화면에서는 후보도 볼 수 있지만 미확인 상태와 원본 확인 안내를 명시한다. 전화번호 필요 여부 등을 알 수 없다는 이유로 무조건 외국인 사용 불가로 판단하지 않는다.
 
 초기 설정은 [coupon-bootstrap.json](../../config/coupon-bootstrap.json)에 있다. 수집 상태를 점검하려면 `npm run coupons:check`를 실행한다. 이 명령은 네트워크 요청, 발급·사용, 자동 수집을 수행하지 않는다.
