@@ -8,7 +8,10 @@
   },
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "check": "node --check src/main.js && node --check vite.config.js",
+    "check": "node --check vite.config.js && npm run plan:check && node --test scripts/plan.test.mjs",
+    "plan:new": "node scripts/plan.mjs new",
+    "plan:list": "node scripts/plan.mjs list",
+    "plan:check": "node scripts/plan.mjs check",
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0"
   },
