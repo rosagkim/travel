@@ -3,6 +3,8 @@ import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
 import { Window } from 'happy-dom';
 import { filterCoupons, publicationIssues } from '../src/lib/coupons.mjs';
+import { merchantNamePair, merchantSearchNames } from '../src/lib/merchant-names.mjs';
+const merchantNames = JSON.parse(readFileSync(new URL('../data/merchants/names.json', import.meta.url)));
 const parts = ['naver-food.seed.json', 'naver-busan-jeju.seed.json'].map((file) => JSON.parse(readFileSync(new URL(`../data/coupons/${file}`, import.meta.url))));
 const dataset = { schemaVersion: 1, collectedAt: parts.map((part) => part.collectedAt).sort().at(-1), coupons: parts.flatMap((part) => part.coupons) };
 const config = JSON.parse(readFileSync(new URL('../config/coupon-bootstrap.json', import.meta.url)));
@@ -11,7 +13,7 @@ function setup(t, blockedStorage = false) {
   const window = new Window({ url: 'https://rosagkim.github.io/travel/' });
   window.document.body.innerHTML = '<div id="app"></div>';
   const storage = blockedStorage ? { getItem() { throw new Error('blocked'); }, setItem() { throw new Error('blocked'); } } : window.localStorage;
-  new Function('document', 'localStorage', 'dataset', 'config', 'filterCoupons', 'publicationIssues', source)(window.document, storage, dataset, config, filterCoupons, publicationIssues);
+  new Function('document', 'localStorage', 'dataset', 'config', 'filterCoupons', 'publicationIssues', 'merchantNames', 'merchantNamePair', 'merchantSearchNames', source)(window.document, storage, dataset, config, filterCoupons, publicationIssues, merchantNames, merchantNamePair, merchantSearchNames);
   t.after(() => window.happyDOM.abort());
   return window;
 }
@@ -85,4 +87,41 @@ test('검색 요약 상세는 실제 쿠폰 ID 확인으로 오인하지 않도�
   assert.match(document.querySelector('.detail-source').textContent, /Naver place search/);
   assert.match(document.querySelector('#detail .primary').href, /map.naver.com/);
   assert.match(document.querySelector('#detail').textContent, /Not confirmed/);
+});
+
+test('모든 도시 카드와 상세에 한영 이름이 같은 순서로 표시되고 양쪽 이름으로 검색된다', (t) => {
+  const window = setup(t), document = window.document;
+  assert.equal(document.querySelectorAll('.merchant-primary').length, 58);
+  assert.ok([...document.querySelectorAll('.merchant-primary')].every((name) => name.lang === 'en' && !/[가-힣]/.test(name.textContent)));
+  assert.ok([...document.querySelectorAll('.merchant-secondary')].every((name) => name.lang === 'ko' && /[가-힣]/.test(name.textContent)));
+  for (const city of ['seoul', 'busan', 'jeju']) {
+    document.querySelector('[data-city="' + city + '"]').click();
+    document.querySelector('[data-language="ko"]').click();
+    const card = document.querySelector('.card');
+    assert.equal(card.querySelector('.merchant-primary').lang, 'ko');
+    assert.equal(card.querySelector('.merchant-secondary').lang, 'en');
+    card.querySelector('[data-detail]').click();
+    assert.equal(document.querySelector('#detail-title').textContent, card.querySelector('.merchant-primary').textContent);
+    assert.equal(document.querySelector('.detail-merchant-secondary').textContent, card.querySelector('.merchant-secondary').textContent);
+    document.querySelector('.close').click();
+  }
+  document.querySelector('[data-city="seoul"]').click();
+  const query = document.querySelector('#query');
+  for (const value of ['양산도', 'Yangsando']) {
+    query.value = value; query.dispatchEvent(new window.Event('input'));
+    assert.equal(document.querySelectorAll('.card').length, 1);
+    assert.match(document.querySelector('.merchant-primary').textContent, /양산도/);
+  }
+  document.querySelector('[data-city="busan"]').click();
+  const currentQuery = document.querySelector('#query');
+  for (const value of ['온탄', 'Ontan']) {
+    currentQuery.value = value; currentQuery.dispatchEvent(new window.Event('input'));
+    assert.equal(document.querySelectorAll('.card').length, 1);
+  }
+  document.querySelector('[data-city="jeju"]').click();
+  const jejuQuery = document.querySelector('#query');
+  for (const value of ['온제', 'Onje']) {
+    jejuQuery.value = value; jejuQuery.dispatchEvent(new window.Event('input'));
+    assert.ok([...document.querySelectorAll('.merchant-primary')].some((name) => name.textContent === '온제'));
+  }
 });

@@ -18,3 +18,5 @@
 초기 설정은 [coupon-bootstrap.json](../../config/coupon-bootstrap.json)에 있다. 수집 상태를 점검하려면 `npm run coupons:check`를 실행한다. 이 명령은 네트워크 요청, 발급·사용, 자동 수집을 수행하지 않는다.
 
 부산·제주 후보의 근거와 종료 기획전 제외 기준은 [추가 조사](../../plan/research/three-city-2026-10-29.md)에 있다. `merchant.area.city`는 `seoul`, `busan`, `jeju`이며 제주 선택은 제주도 여행 목적지를 뜻한다. 상세 도로명 주소를 확인하지 못한 검색 결과의 지역 원문은 `merchant.areaTextRaw`에 보존한다.
+
+화면의 매장명은 [한영 이름 사전](../merchants/names.json)에서 매장 ID로 조회한다. 수집 원문 `merchant.name`을 그대로 표시하지 않으며 한국어·영문·원문 별칭으로 검색한다. 이름 확인 근거는 [매장명 조사](../../plan/research/merchant-names-2026-10-29.md)에 있다.

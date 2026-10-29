@@ -1,10 +1,12 @@
 import { readFileSync } from 'node:fs';
 import { publicationIssues, validateDataset } from '../src/lib/coupons.mjs';
+import { validateMerchantNames } from '../src/lib/merchant-names.mjs';
 const datasets = ['naver-food.seed.json', 'naver-busan-jeju.seed.json'].map((name) => JSON.parse(readFileSync(new URL(`../data/coupons/${name}`, import.meta.url), 'utf8')));
 const dataset = { schemaVersion: 1, collectedAt: datasets.map((item) => item.collectedAt).sort((a, b) => Date.parse(b) - Date.parse(a))[0], coupons: datasets.flatMap((item) => item.coupons) };
 
 const config = JSON.parse(readFileSync(new URL('../config/coupon-bootstrap.json', import.meta.url), 'utf8'));
-const errors = validateDataset(dataset);
+const merchantNames = JSON.parse(readFileSync(new URL('../data/merchants/names.json', import.meta.url), 'utf8'));
+const errors = [...validateDataset(dataset), ...validateMerchantNames(dataset.coupons, merchantNames)];
 const cities = new Set(config.initialScope.cities.map((city) => city.id));
 for (const coupon of dataset.coupons) {
   if (!cities.has(coupon.merchant.area.city)) errors.push(`Unknown city: ${coupon.merchant.area.city}`);
