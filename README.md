@@ -25,3 +25,9 @@ npm run build    # 정적 사이트 빌드
 서비스 기획이 정해지면 `src/`에 구현을 시작합니다. `main`에 커밋·푸시하면 GitHub Actions가 검증·빌드 후 Pages에 직접 배포합니다. 별도 배포 브랜치는 사용하지 않습니다.
 
 사이트: https://rosagkim.github.io/travel/
+
+## 쿠폰 데이터 초기 세팅
+
+네이버 음식점 조사로 17개 매장의 쿠폰 후보 23건을 저장했습니다. 현재는 상세 조건 검수 전이며 공개 가능한 쿠폰은 0건입니다. 조사·출처·접근 한계는 [조사 기록](plan/research/naver-food-2026-10-29.md), 데이터 구조와 검수 방법은 [데이터 안내](data/coupons/README.md)에 있습니다.
+
+`npm run coupons:check`로 후보 데이터와 공개 가능 건수를 검사합니다. `npm run check`에는 쿠폰 데이터 검사와 관련 테스트도 포함됩니다. 초기 지역·업종·검수 정책은 `config/coupon-bootstrap.json`에 저장하며 자동 수집은 비활성화 상태입니다.

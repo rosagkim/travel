@@ -8,12 +8,13 @@
   },
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "check": "node --check vite.config.js && npm run plan:check && node --test scripts/plan.test.mjs",
+    "check": "node --check vite.config.js && npm run plan:check && npm run coupons:check && node --test scripts/*.test.mjs",
     "plan:new": "node scripts/plan.mjs new",
     "plan:list": "node scripts/plan.mjs list",
     "plan:check": "node scripts/plan.mjs check",
     "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0"
+    "preview": "vite preview --host 0.0.0.0",
+    "coupons:check": "node scripts/coupons.mjs"
   },
   "devDependencies": {
     "vite": "8.3.5"

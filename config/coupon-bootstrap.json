@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "initialScope": {
+    "city": "seoul",
+    "district": "mapo",
+    "neighborhoods": [
+      "hongdae",
+      "yeonnam",
+      "hapjeong",
+      "mangwon",
+      "gongdeok",
+      "sinchon"
+    ],
+    "categories": [
+      "bar",
+      "hotpot",
+      "indian",
+      "izakaya",
+      "japanese",
+      "korean",
+      "korean-bbq",
+      "seafood",
+      "sushi"
+    ],
+    "basis": "공개 음식점 기획전에서 원본 쿠폰 링크와 좌표를 함께 확보한 지역부터 시작. 시장 수요나 전국 분포에 대한 결론은 아님."
+  },
+  "collection": {
+    "provider": "naver-place",
+    "mode": "manual-review",
+    "automaticCollectionEnabled": false,
+    "discoveryUrls": [
+      "https://booking.map.naver.com/promotions/pioa3d2oskuc"
+    ],
+    "stopOnHttpStatuses": [
+      401,
+      403,
+      429
+    ],
+    "onRateLimit": "stop-and-review",
+    "recheckTargetHours": 24,
+    "note": "24시간은 향후 검수 목표이며 스케줄러가 설치되거나 실행 중이라는 의미가 아님."
+  },
+  "publication": {
+    "requireVerifiedReview": true,
+    "requireKnownValidity": true,
+    "requireVerifiedTravelerRequirements": true,
+    "maxReviewAgeHours": 24,
+    "unknownNeighborhoodPolicy": "district-only"
+  },
+  "redemption": {
+    "mode": "original-provider",
+    "issueInApp": false
+  }
+}

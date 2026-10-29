@@ -1,0 +1,1708 @@
+{
+  "schemaVersion": 1,
+  "collectedAt": "2026-10-29T21:31:44+09:00",
+  "coupons": [
+    {
+      "id": "naver-place-2028793825-coupon-1181603",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2028793825",
+        "couponId": "1181603",
+        "promotionId": "1177955",
+        "listingUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc",
+        "couponUrl": "https://m.booking.naver.com/coupon/place/2028793825/coupons?theme=place&service-target=nmap&lang=ko",
+        "observedAt": "2026-10-29T21:31:44+09:00",
+        "evidenceLevel": "public-listing",
+        "titleRaw": "비 내리면 냉제육이 서비스! 쿠폰",
+        "conditionTypeRaw": "PLACE_HOME",
+        "useTypeRaw": "ALL",
+        "couponTypeRaw": "gift"
+      },
+      "merchant": {
+        "name": "Yeonnam Dalbit K-BBQ&PUB",
+        "nameLanguage": "en",
+        "category": "korean-bbq",
+        "categoryRaw": "Meat, Food",
+        "area": {
+          "city": "seoul",
+          "district": "mapo",
+          "neighborhood": "yeonnam",
+          "sourceFilterId": "matzidomapo-yeonnam"
+        },
+        "address": null,
+        "coordinates": {
+          "latitude": 37.5600788,
+          "longitude": 126.9223558
+        },
+        "placeUrl": "https://nmap.place.naver.com/place/2028793825/home?entry=ple&nmapViewType=full"
+      },
+      "benefit": {
+        "title": "비 내리면 냉제육이 서비스! 쿠폰",
+        "language": "ko",
+        "kind": "gift",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "공개 기획전 목록에서 존재와 제목을 확인. 유효기간·상세 조건·외국인 사용 가능성은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2028793825-coupon-1136792",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2028793825",
+        "couponId": "1136792",
+        "promotionId": "1133268",
+        "listingUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc",
+        "couponUrl": "https://m.booking.naver.com/coupon/place/2028793825/coupons?theme=place&service-target=nmap&lang=ko",
+        "observedAt": "2026-10-29T21:31:44+09:00",
+        "evidenceLevel": "public-listing",
+        "titleRaw": "사계절 루프탑 야장 감성! 쿠폰",
+        "conditionTypeRaw": "PLACE_BENEFIT_NOTIFICATION_SUBSCRIBED",
+        "useTypeRaw": "ALL",
+        "couponTypeRaw": "gift"
+      },
+      "merchant": {
+        "name": "Yeonnam Dalbit K-BBQ&PUB",
+        "nameLanguage": "en",
+        "category": "korean-bbq",
+        "categoryRaw": "Meat, Food",
+        "area": {
+          "city": "seoul",
+          "district": "mapo",
+          "neighborhood": "yeonnam",
+          "sourceFilterId": "matzidomapo-yeonnam"
+        },
+        "address": null,
+        "coordinates": {
+          "latitude": 37.5600788,
+          "longitude": 126.9223558
+        },
+        "placeUrl": "https://nmap.place.naver.com/place/2028793825/home?entry=ple&nmapViewType=full"
+      },
+      "benefit": {
+        "title": "사계절 루프탑 야장 감성! 쿠폰",
+        "language": "ko",
+        "kind": "gift",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "공개 기획전 목록에서 존재와 제목을 확인. 유효기간·상세 조건·외국인 사용 가능성은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2032729886-coupon-1111983",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2032729886",
+        "couponId": "1111983",
+        "promotionId": "1108528",
+        "listingUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc",
+        "couponUrl": "https://m.booking.naver.com/coupon/place/2032729886/coupons?theme=place&service-target=nmap&lang=ko",
+        "observedAt": "2026-10-29T21:31:44+09:00",
+        "evidenceLevel": "public-listing",
+        "titleRaw": "100% 당첨 쿠폰",
+        "conditionTypeRaw": "PLACE_HOME",
+        "useTypeRaw": "ALL",
+        "couponTypeRaw": "gift"
+      },
+      "merchant": {
+        "name": "Warara Huoguo Unlimited Refill",
+        "nameLanguage": "en",
+        "category": "hotpot",
+        "categoryRaw": "Shabu-Shabu",
+        "area": {
+          "city": "seoul",
+          "district": "mapo",
+          "neighborhood": "hongdae",
+          "sourceFilterId": "matzidomapo-hongdae"
+        },
+        "address": null,
+        "coordinates": {
+          "latitude": 37.5556905,
+          "longitude": 126.9254931
+        },
+        "placeUrl": "https://nmap.place.naver.com/place/2032729886/home?entry=ple&nmapViewType=full"
+      },
+      "benefit": {
+        "title": "100% 당첨 쿠폰",
+        "language": "ko",
+        "kind": "gift",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "공개 기획전 목록에서 존재와 제목을 확인. 유효기간·상세 조건·외국인 사용 가능성은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2032729886-coupon-1085275",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2032729886",
+        "couponId": "1085275",
+        "promotionId": "1081940",
+        "listingUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc",
+        "couponUrl": "https://m.booking.naver.com/coupon/place/2032729886/coupons?theme=place&service-target=nmap&lang=ko",
+        "observedAt": "2026-10-29T21:31:44+09:00",
+        "evidenceLevel": "public-listing",
+        "titleRaw": "2,000원 할인 or 음료 쿠폰",
+        "conditionTypeRaw": "PLACE_BENEFIT_NOTIFICATION_SUBSCRIBED",
+        "useTypeRaw": "ALL",
+        "couponTypeRaw": "gift"
+      },
+      "merchant": {
+        "name": "Warara Huoguo Unlimited Refill",
+        "nameLanguage": "en",
+        "category": "hotpot",
+        "categoryRaw": "Shabu-Shabu",
+        "area": {
+          "city": "seoul",
+          "district": "mapo",
+          "neighborhood": "hongdae",
+          "sourceFilterId": "matzidomapo-hongdae"
+        },
+        "address": null,
+        "coordinates": {
+          "latitude": 37.5556905,
+          "longitude": 126.9254931
+        },
+        "placeUrl": "https://nmap.place.naver.com/place/2032729886/home?entry=ple&nmapViewType=full"
+      },
+      "benefit": {
+        "title": "2,000원 할인 or 음료 쿠폰",
+        "language": "ko",
+        "kind": "gift",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "공개 기획전 목록에서 존재와 제목을 확인. 유효기간·상세 조건·외국인 사용 가능성은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2097330967-coupon-900687",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2097330967",
+        "couponId": "900687",
+        "promotionId": "897978",
+        "listingUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc",
+        "couponUrl": "https://nmap.place.naver.com/restaurant/2097330967/home?entry=ple&nmapViewType=full",
+        "observedAt": "2026-10-29T21:31:44+09:00",
+        "evidenceLevel": "public-listing",
+        "titleRaw": "딱 한 접시 공짜 혜택!! 쿠폰",
+        "conditionTypeRaw": "PLACE_HOME",
+        "useTypeRaw": "ALL",
+        "couponTypeRaw": "gift"
+      },
+      "merchant": {
+        "name": "euddeumseus",
+        "nameLanguage": "en",
+        "category": "sushi",
+        "categoryRaw": "Sushi, Roll",
+        "area": {
+          "city": "seoul",
+          "district": "mapo",
+          "neighborhood": "sinchon",
+          "sourceFilterId": "matzidomapo-sinchon"
+        },
+        "address": null,
+        "coordinates": {
+          "latitude": 37.5566115,
+          "longitude": 126.9354364
+        },
+        "placeUrl": "https://nmap.place.naver.com/place/2097330967/home?entry=ple&nmapViewType=full"
+      },
+      "benefit": {
+        "title": "딱 한 접시 공짜 혜택!! 쿠폰",
+        "language": "ko",
+        "kind": "gift",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "공개 기획전 목록에서 존재와 제목을 확인. 유효기간·상세 조건·외국인 사용 가능성은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-1235412532-coupon-1166906",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "1235412532",
+        "couponId": "1166906",
+        "promotionId": "1163311",
+        "listingUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc",
+        "couponUrl": "https://nmap.place.naver.com/restaurant/1235412532/home?entry=ple&nmapViewType=full",
+        "observedAt": "2026-10-29T21:31:44+09:00",
+        "evidenceLevel": "public-listing",
+        "titleRaw": "※포토리뷰※연어유부초밥1ps 쿠폰",
+        "conditionTypeRaw": "PLACE_HOME",
+        "useTypeRaw": "ALL",
+        "couponTypeRaw": "gift"
+      },
+      "merchant": {
+        "name": "Yangsando Gongdeok Branch",
+        "nameLanguage": "en",
+        "category": "japanese",
+        "categoryRaw": "Japanese Food",
+        "area": {
+          "city": "seoul",
+          "district": "mapo",
+          "neighborhood": "gongdeok",
+          "sourceFilterId": "matzidomapo-gongdeok"
+        },
+        "address": null,
+        "coordinates": {
+          "latitude": 37.544782,
+          "longitude": 126.9484071
+        },
+        "placeUrl": "https://nmap.place.naver.com/place/1235412532/home?entry=ple&nmapViewType=full"
+      },
+      "benefit": {
+        "title": "※포토리뷰※연어유부초밥1ps 쿠폰",
+        "language": "ko",
+        "kind": "gift",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "공개 기획전 목록에서 존재와 제목을 확인. 유효기간·상세 조건·외국인 사용 가능성은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-1237443583-coupon-1276647",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "1237443583",
+        "couponId": "1276647",
+        "promotionId": "1272764",
+        "listingUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc",
+        "couponUrl": "https://m.booking.naver.com/coupon/place/1237443583/coupons?theme=place&service-target=nmap&lang=ko",
+        "observedAt": "2026-10-29T21:31:44+09:00",
+        "evidenceLevel": "public-listing",
+        "titleRaw": "생일주 슈터칵테일 쿠폰",
+        "conditionTypeRaw": "PLACE_HOME",
+        "useTypeRaw": "ALL",
+        "couponTypeRaw": "gift"
+      },
+      "merchant": {
+        "name": "airplanemode",
+        "nameLanguage": "en",
+        "category": "bar",
+        "categoryRaw": "Bar (BAR)",
+        "area": {
+          "city": "seoul",
+          "district": "mapo",
+          "neighborhood": "sinchon",
+          "sourceFilterId": "matzidomapo-sinchon"
+        },
+        "address": null,
+        "coordinates": {
+          "latitude": 37.5577072,
+          "longitude": 126.9386878
+        },
+        "placeUrl": "https://nmap.place.naver.com/place/1237443583/home?entry=ple&nmapViewType=full"
+      },
+      "benefit": {
+        "title": "생일주 슈터칵테일 쿠폰",
+        "language": "ko",
+        "kind": "gift",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "공개 기획전 목록에서 존재와 제목을 확인. 유효기간·상세 조건·외국인 사용 가능성은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-1237443583-coupon-277720",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "1237443583",
+        "couponId": "277720",
+        "promotionId": "276685",
+        "listingUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc",
+        "couponUrl": "https://m.booking.naver.com/coupon/place/1237443583/coupons?theme=place&service-target=nmap&lang=ko",
+        "observedAt": "2026-10-29T21:31:44+09:00",
+        "evidenceLevel": "public-listing",
+        "titleRaw": "생일 이벤트 : 생일주 증정 쿠폰",
+        "conditionTypeRaw": "PLACE_BENEFIT_NOTIFICATION_SUBSCRIBED",
+        "useTypeRaw": "ALL",
+        "couponTypeRaw": "gift"
+      },
+      "merchant": {
+        "name": "airplanemode",
+        "nameLanguage": "en",
+        "category": "bar",
+        "categoryRaw": "Bar (BAR)",
+        "area": {
+          "city": "seoul",
+          "district": "mapo",
+          "neighborhood": "sinchon",
+          "sourceFilterId": "matzidomapo-sinchon"
+        },
+        "address": null,
+        "coordinates": {
+          "latitude": 37.5577072,
+          "longitude": 126.9386878
+        },
+        "placeUrl": "https://nmap.place.naver.com/place/1237443583/home?entry=ple&nmapViewType=full"
+      },
+      "benefit": {
+        "title": "생일 이벤트 : 생일주 증정 쿠폰",
+        "language": "ko",
+        "kind": "gift",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "공개 기획전 목록에서 존재와 제목을 확인. 유효기간·상세 조건·외국인 사용 가능성은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-1309781106-coupon-723696",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "1309781106",
+        "couponId": "723696",
+        "promotionId": "721438",
+        "listingUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc",
+        "couponUrl": "https://nmap.place.naver.com/restaurant/1309781106/home?entry=ple&nmapViewType=full",
+        "observedAt": "2026-10-29T21:31:44+09:00",
+        "evidenceLevel": "public-listing",
+        "titleRaw": "5000원 버터팝콘 무료 쿠폰",
+        "conditionTypeRaw": "PLACE_BENEFIT_NOTIFICATION_SUBSCRIBED",
+        "useTypeRaw": "ALL",
+        "couponTypeRaw": "gift"
+      },
+      "merchant": {
+        "name": "BLAB HONGDEA",
+        "nameLanguage": "en",
+        "category": "bar",
+        "categoryRaw": "Bar (BAR)",
+        "area": {
+          "city": "seoul",
+          "district": "mapo",
+          "neighborhood": "hongdae",
+          "sourceFilterId": "matzidomapo-hongdae"
+        },
+        "address": null,
+        "coordinates": {
+          "latitude": 37.5508953,
+          "longitude": 126.9220198
+        },
+        "placeUrl": "https://nmap.place.naver.com/place/1309781106/home?entry=ple&nmapViewType=full"
+      },
+      "benefit": {
+        "title": "5000원 버터팝콘 무료 쿠폰",
+        "language": "ko",
+        "kind": "gift",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "공개 기획전 목록에서 존재와 제목을 확인. 유효기간·상세 조건·외국인 사용 가능성은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-1023957785-coupon-1164740",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "1023957785",
+        "couponId": "1164740",
+        "promotionId": "1161150",
+        "listingUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc",
+        "couponUrl": "https://nmap.place.naver.com/restaurant/1023957785/home?entry=ple&nmapViewType=full",
+        "observedAt": "2026-10-29T21:31:44+09:00",
+        "evidenceLevel": "public-listing",
+        "titleRaw": "네이버지도 저장시 샷 제공 쿠폰",
+        "conditionTypeRaw": "PLACE_HOME",
+        "useTypeRaw": "ALL",
+        "couponTypeRaw": "gift"
+      },
+      "merchant": {
+        "name": "WITH",
+        "nameLanguage": "en",
+        "category": "bar",
+        "categoryRaw": "Bar (BAR)",
+        "area": {
+          "city": "seoul",
+          "district": "mapo",
+          "neighborhood": "hapjeong",
+          "sourceFilterId": "matzidomapo-hapjeong"
+        },
+        "address": null,
+        "coordinates": {
+          "latitude": 37.5491158,
+          "longitude": 126.9166333
+        },
+        "placeUrl": "https://nmap.place.naver.com/place/1023957785/home?entry=ple&nmapViewType=full"
+      },
+      "benefit": {
+        "title": "네이버지도 저장시 샷 제공 쿠폰",
+        "language": "ko",
+        "kind": "gift",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "공개 기획전 목록에서 존재와 제목을 확인. 유효기간·상세 조건·외국인 사용 가능성은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-1351889411-coupon-1199969",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "1351889411",
+        "couponId": "1199969",
+        "promotionId": "1196249",
+        "listingUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc",
+        "couponUrl": "https://m.booking.naver.com/coupon/place/1351889411/coupons?theme=place&service-target=nmap&lang=ko",
+        "observedAt": "2026-10-29T21:31:44+09:00",
+        "evidenceLevel": "public-listing",
+        "titleRaw": "1000cc하이볼 폭탄할인! 쿠폰",
+        "conditionTypeRaw": "PLACE_HOME",
+        "useTypeRaw": "ALL",
+        "couponTypeRaw": "gift"
+      },
+      "merchant": {
+        "name": "YUK SAN JANG Hongdae",
+        "nameLanguage": "en",
+        "category": "korean-bbq",
+        "categoryRaw": "Meat, Food",
+        "area": {
+          "city": "seoul",
+          "district": "mapo",
+          "neighborhood": "hongdae",
+          "sourceFilterId": "matzidomapo-hongdae"
+        },
+        "address": null,
+        "coordinates": {
+          "latitude": 37.5519925,
+          "longitude": 126.9220917
+        },
+        "placeUrl": "https://nmap.place.naver.com/place/1351889411/home?entry=ple&nmapViewType=full"
+      },
+      "benefit": {
+        "title": "1000cc하이볼 폭탄할인! 쿠폰",
+        "language": "ko",
+        "kind": "gift",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "공개 기획전 목록에서 존재와 제목을 확인. 유효기간·상세 조건·외국인 사용 가능성은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-1351889411-coupon-988534",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "1351889411",
+        "couponId": "988534",
+        "promotionId": "985531",
+        "listingUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc",
+        "couponUrl": "https://m.booking.naver.com/coupon/place/1351889411/coupons?theme=place&service-target=nmap&lang=ko",
+        "observedAt": "2026-10-29T21:31:44+09:00",
+        "evidenceLevel": "public-listing",
+        "titleRaw": "리뷰작성시 김치찌개 증정! 쿠폰",
+        "conditionTypeRaw": "PLACE_BENEFIT_NOTIFICATION_SUBSCRIBED",
+        "useTypeRaw": "ALL",
+        "couponTypeRaw": "gift"
+      },
+      "merchant": {
+        "name": "YUK SAN JANG Hongdae",
+        "nameLanguage": "en",
+        "category": "korean-bbq",
+        "categoryRaw": "Meat, Food",
+        "area": {
+          "city": "seoul",
+          "district": "mapo",
+          "neighborhood": "hongdae",
+          "sourceFilterId": "matzidomapo-hongdae"
+        },
+        "address": null,
+        "coordinates": {
+          "latitude": 37.5519925,
+          "longitude": 126.9220917
+        },
+        "placeUrl": "https://nmap.place.naver.com/place/1351889411/home?entry=ple&nmapViewType=full"
+      },
+      "benefit": {
+        "title": "리뷰작성시 김치찌개 증정! 쿠폰",
+        "language": "ko",
+        "kind": "gift",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "공개 기획전 목록에서 존재와 제목을 확인. 유효기간·상세 조건·외국인 사용 가능성은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-12913726-coupon-1232463",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "12913726",
+        "couponId": "1232463",
+        "promotionId": "1228693",
+        "listingUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc",
+        "couponUrl": "https://m.booking.naver.com/coupon/place/12913726/coupons?theme=place&service-target=nmap&lang=ko",
+        "observedAt": "2026-10-29T21:31:44+09:00",
+        "evidenceLevel": "public-listing",
+        "titleRaw": "리뷰작성시 전통과자 1봉지 쿠폰",
+        "conditionTypeRaw": "PLACE_HOME",
+        "useTypeRaw": "ALL",
+        "couponTypeRaw": "gift"
+      },
+      "merchant": {
+        "name": "YUKJEON KOREAN RESTAURANT",
+        "nameLanguage": "en",
+        "category": "korean",
+        "categoryRaw": "Korean Food",
+        "area": {
+          "city": "seoul",
+          "district": "mapo",
+          "neighborhood": null,
+          "sourceFilterId": "matzidomapo-connect"
+        },
+        "address": null,
+        "coordinates": {
+          "latitude": 37.5429468,
+          "longitude": 126.9470965
+        },
+        "placeUrl": "https://nmap.place.naver.com/place/12913726/home?entry=ple&nmapViewType=full"
+      },
+      "benefit": {
+        "title": "리뷰작성시 전통과자 1봉지 쿠폰",
+        "language": "ko",
+        "kind": "gift",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "공개 기획전 목록에서 존재와 제목을 확인. 유효기간·상세 조건·외국인 사용 가능성은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-12913726-coupon-1232460",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "12913726",
+        "couponId": "1232460",
+        "promotionId": "1228690",
+        "listingUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc",
+        "couponUrl": "https://m.booking.naver.com/coupon/place/12913726/coupons?theme=place&service-target=nmap&lang=ko",
+        "observedAt": "2026-10-29T21:31:44+09:00",
+        "evidenceLevel": "public-listing",
+        "titleRaw": "리뷰작성시 정성 반찬 1팩  쿠폰",
+        "conditionTypeRaw": "PLACE_BENEFIT_NOTIFICATION_SUBSCRIBED",
+        "useTypeRaw": "ALL",
+        "couponTypeRaw": "gift"
+      },
+      "merchant": {
+        "name": "YUKJEON KOREAN RESTAURANT",
+        "nameLanguage": "en",
+        "category": "korean",
+        "categoryRaw": "Korean Food",
+        "area": {
+          "city": "seoul",
+          "district": "mapo",
+          "neighborhood": null,
+          "sourceFilterId": "matzidomapo-connect"
+        },
+        "address": null,
+        "coordinates": {
+          "latitude": 37.5429468,
+          "longitude": 126.9470965
+        },
+        "placeUrl": "https://nmap.place.naver.com/place/12913726/home?entry=ple&nmapViewType=full"
+      },
+      "benefit": {
+        "title": "리뷰작성시 정성 반찬 1팩  쿠폰",
+        "language": "ko",
+        "kind": "gift",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "공개 기획전 목록에서 존재와 제목을 확인. 유효기간·상세 조건·외국인 사용 가능성은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-20713591-coupon-1094840",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "20713591",
+        "couponId": "1094840",
+        "promotionId": "1091488",
+        "listingUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc",
+        "couponUrl": "https://nmap.place.naver.com/restaurant/20713591/home?entry=ple&nmapViewType=full",
+        "observedAt": "2026-10-29T21:31:44+09:00",
+        "evidenceLevel": "public-listing",
+        "titleRaw": "음료 or 주류 1병 제공 쿠폰",
+        "conditionTypeRaw": "PLACE_BENEFIT_NOTIFICATION_SUBSCRIBED",
+        "useTypeRaw": "ALL",
+        "couponTypeRaw": "gift"
+      },
+      "merchant": {
+        "name": "hongilpoom soy sauce crab",
+        "nameLanguage": "en",
+        "category": "seafood",
+        "categoryRaw": "Crab",
+        "area": {
+          "city": "seoul",
+          "district": "mapo",
+          "neighborhood": "hapjeong",
+          "sourceFilterId": "matzidomapo-hapjeong"
+        },
+        "address": null,
+        "coordinates": {
+          "latitude": 37.54808,
+          "longitude": 126.9187172
+        },
+        "placeUrl": "https://nmap.place.naver.com/place/20713591/home?entry=ple&nmapViewType=full"
+      },
+      "benefit": {
+        "title": "음료 or 주류 1병 제공 쿠폰",
+        "language": "ko",
+        "kind": "gift",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "공개 기획전 목록에서 존재와 제목을 확인. 유효기간·상세 조건·외국인 사용 가능성은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-1773162927-coupon-823039",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "1773162927",
+        "couponId": "823039",
+        "promotionId": "820465",
+        "listingUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc",
+        "couponUrl": "https://m.booking.naver.com/coupon/place/1773162927/coupons?theme=place&service-target=nmap&lang=ko",
+        "observedAt": "2026-10-29T21:31:44+09:00",
+        "evidenceLevel": "public-listing",
+        "titleRaw": "소방,경찰,군인 감사 할인 쿠폰",
+        "conditionTypeRaw": "PLACE_HOME",
+        "useTypeRaw": "ALL",
+        "couponTypeRaw": "gift"
+      },
+      "merchant": {
+        "name": "okmyeonga",
+        "nameLanguage": "en",
+        "category": "korean",
+        "categoryRaw": "Korean Food",
+        "area": {
+          "city": "seoul",
+          "district": "mapo",
+          "neighborhood": "gongdeok",
+          "sourceFilterId": "matzidomapo-gongdeok"
+        },
+        "address": null,
+        "coordinates": {
+          "latitude": 37.5457291,
+          "longitude": 126.945927
+        },
+        "placeUrl": "https://nmap.place.naver.com/place/1773162927/home?entry=ple&nmapViewType=full"
+      },
+      "benefit": {
+        "title": "소방,경찰,군인 감사 할인 쿠폰",
+        "language": "ko",
+        "kind": "gift",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "공개 기획전 목록에서 존재와 제목을 확인. 유효기간·상세 조건·외국인 사용 가능성은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-1773162927-coupon-823032",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "1773162927",
+        "couponId": "823032",
+        "promotionId": "820458",
+        "listingUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc",
+        "couponUrl": "https://m.booking.naver.com/coupon/place/1773162927/coupons?theme=place&service-target=nmap&lang=ko",
+        "observedAt": "2026-10-29T21:31:44+09:00",
+        "evidenceLevel": "public-listing",
+        "titleRaw": "생일 축하 한상차림 선물! 쿠폰",
+        "conditionTypeRaw": "PLACE_BENEFIT_NOTIFICATION_SUBSCRIBED",
+        "useTypeRaw": "ALL",
+        "couponTypeRaw": "gift"
+      },
+      "merchant": {
+        "name": "okmyeonga",
+        "nameLanguage": "en",
+        "category": "korean",
+        "categoryRaw": "Korean Food",
+        "area": {
+          "city": "seoul",
+          "district": "mapo",
+          "neighborhood": "gongdeok",
+          "sourceFilterId": "matzidomapo-gongdeok"
+        },
+        "address": null,
+        "coordinates": {
+          "latitude": 37.5457291,
+          "longitude": 126.945927
+        },
+        "placeUrl": "https://nmap.place.naver.com/place/1773162927/home?entry=ple&nmapViewType=full"
+      },
+      "benefit": {
+        "title": "생일 축하 한상차림 선물! 쿠폰",
+        "language": "ko",
+        "kind": "gift",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "공개 기획전 목록에서 존재와 제목을 확인. 유효기간·상세 조건·외국인 사용 가능성은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-1484798126-coupon-713616",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "1484798126",
+        "couponId": "713616",
+        "promotionId": "711376",
+        "listingUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc",
+        "couponUrl": "https://nmap.place.naver.com/restaurant/1484798126/home?entry=ple&nmapViewType=full",
+        "observedAt": "2026-10-29T21:31:44+09:00",
+        "evidenceLevel": "public-listing",
+        "titleRaw": "[맛보기 냉우육] 증정! 쿠폰",
+        "conditionTypeRaw": "PLACE_BENEFIT_NOTIFICATION_SUBSCRIBED",
+        "useTypeRaw": "ALL",
+        "couponTypeRaw": "gift"
+      },
+      "merchant": {
+        "name": "wootang",
+        "nameLanguage": "en",
+        "category": "korean",
+        "categoryRaw": "Korean Food",
+        "area": {
+          "city": "seoul",
+          "district": "mapo",
+          "neighborhood": "yeonnam",
+          "sourceFilterId": "matzidomapo-yeonnam"
+        },
+        "address": null,
+        "coordinates": {
+          "latitude": 37.5665114,
+          "longitude": 126.9171075
+        },
+        "placeUrl": "https://nmap.place.naver.com/place/1484798126/home?entry=ple&nmapViewType=full"
+      },
+      "benefit": {
+        "title": "[맛보기 냉우육] 증정! 쿠폰",
+        "language": "ko",
+        "kind": "gift",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "공개 기획전 목록에서 존재와 제목을 확인. 유효기간·상세 조건·외국인 사용 가능성은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-1507731657-coupon-743996",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "1507731657",
+        "couponId": "743996",
+        "promotionId": "741600",
+        "listingUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc",
+        "couponUrl": "https://nmap.place.naver.com/restaurant/1507731657/home?entry=ple&nmapViewType=full",
+        "observedAt": "2026-10-29T21:31:44+09:00",
+        "evidenceLevel": "public-listing",
+        "titleRaw": "메뉴에없는 빠다고구마 쿠폰",
+        "conditionTypeRaw": "PLACE_HOME",
+        "useTypeRaw": "ALL",
+        "couponTypeRaw": "gift"
+      },
+      "merchant": {
+        "name": "Robata Uzik",
+        "nameLanguage": "en",
+        "category": "izakaya",
+        "categoryRaw": "Izakaya",
+        "area": {
+          "city": "seoul",
+          "district": "mapo",
+          "neighborhood": null,
+          "sourceFilterId": "matzidomapo-connect"
+        },
+        "address": null,
+        "coordinates": {
+          "latitude": 37.5547743,
+          "longitude": 126.9053604
+        },
+        "placeUrl": "https://nmap.place.naver.com/place/1507731657/home?entry=ple&nmapViewType=full"
+      },
+      "benefit": {
+        "title": "메뉴에없는 빠다고구마 쿠폰",
+        "language": "ko",
+        "kind": "gift",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "공개 기획전 목록에서 존재와 제목을 확인. 유효기간·상세 조건·외국인 사용 가능성은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-1642956496-coupon-123512",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "1642956496",
+        "couponId": "123512",
+        "promotionId": "123199",
+        "listingUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc",
+        "couponUrl": "https://nmap.place.naver.com/restaurant/1642956496/home?entry=ple&nmapViewType=full",
+        "observedAt": "2026-10-29T21:31:44+09:00",
+        "evidenceLevel": "public-listing",
+        "titleRaw": "리뷰작성 볶음밥 서비스! 쿠폰",
+        "conditionTypeRaw": "PLACE_HOME",
+        "useTypeRaw": "ALL",
+        "couponTypeRaw": "gift"
+      },
+      "merchant": {
+        "name": "snaggobchang",
+        "nameLanguage": "en",
+        "category": "korean-bbq",
+        "categoryRaw": "Grilled Tripe, Entrails",
+        "area": {
+          "city": "seoul",
+          "district": "mapo",
+          "neighborhood": "mangwon",
+          "sourceFilterId": "matzidomapo-mangwon"
+        },
+        "address": null,
+        "coordinates": {
+          "latitude": 37.553077,
+          "longitude": 126.9118604
+        },
+        "placeUrl": "https://nmap.place.naver.com/place/1642956496/home?entry=ple&nmapViewType=full"
+      },
+      "benefit": {
+        "title": "리뷰작성 볶음밥 서비스! 쿠폰",
+        "language": "ko",
+        "kind": "gift",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "공개 기획전 목록에서 존재와 제목을 확인. 유효기간·상세 조건·외국인 사용 가능성은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-1979871290-coupon-1064019",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "1979871290",
+        "couponId": "1064019",
+        "promotionId": "1060754",
+        "listingUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc",
+        "couponUrl": "https://nmap.place.naver.com/restaurant/1979871290/home?entry=ple&nmapViewType=full",
+        "observedAt": "2026-10-29T21:31:44+09:00",
+        "evidenceLevel": "public-listing",
+        "titleRaw": "영수증이벤트 원하는 난 증정 쿠폰",
+        "conditionTypeRaw": "PLACE_BENEFIT_NOTIFICATION_SUBSCRIBED",
+        "useTypeRaw": "ALL",
+        "couponTypeRaw": "gift"
+      },
+      "merchant": {
+        "name": "Mandala Indian Lounge",
+        "nameLanguage": "en",
+        "category": "indian",
+        "categoryRaw": "Indian Food",
+        "area": {
+          "city": "seoul",
+          "district": "mapo",
+          "neighborhood": "hapjeong",
+          "sourceFilterId": "matzidomapo-hapjeong"
+        },
+        "address": null,
+        "coordinates": {
+          "latitude": 37.549399,
+          "longitude": 126.9171861
+        },
+        "placeUrl": "https://nmap.place.naver.com/place/1979871290/home?entry=ple&nmapViewType=full"
+      },
+      "benefit": {
+        "title": "영수증이벤트 원하는 난 증정 쿠폰",
+        "language": "ko",
+        "kind": "gift",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "공개 기획전 목록에서 존재와 제목을 확인. 유효기간·상세 조건·외국인 사용 가능성은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-37257404-coupon-1122706",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "37257404",
+        "couponId": "1122706",
+        "promotionId": "1119225",
+        "listingUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc",
+        "couponUrl": "https://nmap.place.naver.com/restaurant/37257404/home?entry=ple&nmapViewType=full",
+        "observedAt": "2026-10-29T21:31:44+09:00",
+        "evidenceLevel": "public-listing",
+        "titleRaw": "네이버 예약_간장새우 증정 쿠폰",
+        "conditionTypeRaw": "PLACE_HOME",
+        "useTypeRaw": "BOOKING",
+        "couponTypeRaw": "gift"
+      },
+      "merchant": {
+        "name": "Fox Sushi",
+        "nameLanguage": "en",
+        "category": "sushi",
+        "categoryRaw": "Sushi, Roll",
+        "area": {
+          "city": "seoul",
+          "district": "mapo",
+          "neighborhood": "hongdae",
+          "sourceFilterId": "matzidomapo-hongdae"
+        },
+        "address": null,
+        "coordinates": {
+          "latitude": 37.551153,
+          "longitude": 126.922667
+        },
+        "placeUrl": "https://nmap.place.naver.com/place/37257404/home?entry=ple&nmapViewType=full"
+      },
+      "benefit": {
+        "title": "네이버 예약_간장새우 증정 쿠폰",
+        "language": "ko",
+        "kind": "gift",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "booking",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "공개 기획전 목록에서 존재와 제목을 확인. 유효기간·상세 조건·외국인 사용 가능성은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2000605317-coupon-1047659",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2000605317",
+        "couponId": "1047659",
+        "promotionId": "1044420",
+        "listingUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc",
+        "couponUrl": "https://nmap.place.naver.com/restaurant/2000605317/home?entry=ple&nmapViewType=full",
+        "observedAt": "2026-10-29T21:31:44+09:00",
+        "evidenceLevel": "public-listing",
+        "titleRaw": "[리뷰이벤트] 오리온생맥주 쿠폰",
+        "conditionTypeRaw": "PLACE_HOME",
+        "useTypeRaw": "ALL",
+        "couponTypeRaw": "gift"
+      },
+      "merchant": {
+        "name": "ToORi izakaya",
+        "nameLanguage": "en",
+        "category": "japanese",
+        "categoryRaw": "Japanese Food",
+        "area": {
+          "city": "seoul",
+          "district": "mapo",
+          "neighborhood": "yeonnam",
+          "sourceFilterId": "matzidomapo-yeonnam"
+        },
+        "address": null,
+        "coordinates": {
+          "latitude": 37.5621841,
+          "longitude": 126.9246741
+        },
+        "placeUrl": "https://nmap.place.naver.com/place/2000605317/home?entry=ple&nmapViewType=full"
+      },
+      "benefit": {
+        "title": "[리뷰이벤트] 오리온생맥주 쿠폰",
+        "language": "ko",
+        "kind": "gift",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "공개 기획전 목록에서 존재와 제목을 확인. 유효기간·상세 조건·외국인 사용 가능성은 미확인."
+      }
+    }
+  ]
+}
