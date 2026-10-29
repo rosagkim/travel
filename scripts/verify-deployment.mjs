@@ -10,7 +10,7 @@ for (let attempt = 1; attempt <= 12; attempt++) {
     if (!response.ok) throw new Error(`Site returned ${response.status}`);
     const html = await response.text();
     if (!html.includes(`name="build-commit" content="${expectedCommit}"`)) throw new Error('Latest build has not reached Pages yet');
-    if (!html.includes('Seoul Perks')) throw new Error('Application shell is missing');
+    if (!html.includes('Korea Perks')) throw new Error('Application shell is missing');
     const assets = [...html.matchAll(/(?:src|href)="([^"]+\.(?:js|css))"/g)].map((match) => new URL(match[1], page));
     if (assets.length < 2) throw new Error('Application assets are missing');
     for (const asset of assets) {

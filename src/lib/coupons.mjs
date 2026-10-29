@@ -18,8 +18,11 @@ export function validateDataset(dataset) {
     if (!text(coupon.id) || ids.has(coupon.id)) fail('missing or duplicate id');
     ids.add(coupon.id);
     const source = coupon.source ?? {};
-    const key = `${source.provider}:${source.placeId}:${source.couponId}`;
-    if (source.provider !== 'naver-place' || !/^\d+$/.test(source.placeId ?? '') || !/^\d+$/.test(source.couponId ?? '') || !/^\d+$/.test(source.promotionId ?? '')) fail('source identifiers required');
+    const key = `${source.provider}:${source.placeId}:${source.couponId ?? source.titleRaw}`;
+    if (source.provider !== 'naver-place' || !/^\d+$/.test(source.placeId ?? '')) fail('source place identifier required');
+    if (!['public-listing', 'search-listing'].includes(source.evidenceLevel)) fail('invalid evidence level');
+    if (source.evidenceLevel === 'public-listing' && (!/^\d+$/.test(source.couponId ?? '') || !/^\d+$/.test(source.promotionId ?? ''))) fail('source coupon identifiers required');
+    if (source.evidenceLevel === 'search-listing' && (source.couponId !== null || source.promotionId !== null)) fail('search listing must not invent coupon identifiers');
     if (sourceKeys.has(key)) fail('duplicate source coupon');
     sourceKeys.add(key);
     if (!url(source.listingUrl) || !url(source.couponUrl) || !timestamp(source.observedAt) || !text(source.titleRaw)) fail('source URLs, title and observation timestamp required');
@@ -59,8 +62,9 @@ export function publicationIssues(coupon, policy, now = new Date()) {
   return issues;
 }
 
-export function filterCoupons(coupons, { neighborhood, category, district } = {}) {
-  return coupons.filter((coupon) => (!neighborhood || coupon.merchant.area.neighborhood === neighborhood)
+export function filterCoupons(coupons, { city, neighborhood, category, district } = {}) {
+  return coupons.filter((coupon) => (!city || coupon.merchant.area.city === city)
+    && (!neighborhood || coupon.merchant.area.neighborhood === neighborhood)
     && (!category || coupon.merchant.category === category)
     && (!district || coupon.merchant.area.district === district));
 }

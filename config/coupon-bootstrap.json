@@ -1,15 +1,47 @@
 {
   "schemaVersion": 1,
   "initialScope": {
-    "city": "seoul",
-    "district": "mapo",
-    "neighborhoods": [
-      "hongdae",
-      "yeonnam",
-      "hapjeong",
-      "mangwon",
-      "gongdeok",
-      "sinchon"
+    "cities": [
+      {
+        "id": "seoul",
+        "label": {
+          "en": "Seoul",
+          "ko": "서울"
+        },
+        "neighborhoods": [
+          "hongdae",
+          "yeonnam",
+          "hapjeong",
+          "mangwon",
+          "gongdeok",
+          "sinchon"
+        ],
+        "discoveryUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc"
+      },
+      {
+        "id": "busan",
+        "label": {
+          "en": "Busan",
+          "ko": "부산"
+        },
+        "neighborhoods": [
+          "haeundae",
+          "gwangalli"
+        ],
+        "discoveryUrl": "https://search.naver.com/search.naver?query=부산%20음식점%20쿠폰"
+      },
+      {
+        "id": "jeju",
+        "label": {
+          "en": "Jeju",
+          "ko": "제주"
+        },
+        "neighborhoods": [
+          "jeju-si",
+          "seogwipo-si"
+        ],
+        "discoveryUrl": "https://search.naver.com/search.naver?query=제주%20음식점%20쿠폰"
+      }
     ],
     "categories": [
       "bar",
@@ -20,16 +52,20 @@
       "korean",
       "korean-bbq",
       "seafood",
-      "sushi"
+      "sushi",
+      "cafe",
+      "western"
     ],
-    "basis": "공개 음식점 기획전에서 원본 쿠폰 링크와 좌표를 함께 확보한 지역부터 시작. 시장 수요나 전국 분포에 대한 결론은 아님."
+    "basis": "사용자가 서울·부산·제주를 지정. 제주는 여행 목적지 제주도 범위로 제주시·서귀포시를 포함. 실제 출처가 확인된 지역부터 후보를 추가한다."
   },
   "collection": {
     "provider": "naver-place",
     "mode": "manual-review",
     "automaticCollectionEnabled": false,
     "discoveryUrls": [
-      "https://booking.map.naver.com/promotions/pioa3d2oskuc"
+      "https://booking.map.naver.com/promotions/pioa3d2oskuc",
+      "https://search.naver.com/search.naver?query=부산%20음식점%20쿠폰",
+      "https://search.naver.com/search.naver?query=제주%20음식점%20쿠폰"
     ],
     "stopOnHttpStatuses": [
       401,

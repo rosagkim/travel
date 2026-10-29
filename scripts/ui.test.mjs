@@ -3,7 +3,8 @@ import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
 import { Window } from 'happy-dom';
 import { filterCoupons, publicationIssues } from '../src/lib/coupons.mjs';
-const dataset = JSON.parse(readFileSync(new URL('../data/coupons/naver-food.seed.json', import.meta.url)));
+const parts = ['naver-food.seed.json', 'naver-busan-jeju.seed.json'].map((file) => JSON.parse(readFileSync(new URL(`../data/coupons/${file}`, import.meta.url))));
+const dataset = { schemaVersion: 1, collectedAt: parts.map((part) => part.collectedAt).sort().at(-1), coupons: parts.flatMap((part) => part.coupons) };
 const config = JSON.parse(readFileSync(new URL('../config/coupon-bootstrap.json', import.meta.url)));
 const source = readFileSync(new URL('../src/main.js', import.meta.url), 'utf8').replace(/^import .*;\n/gm, '');
 function setup(t, blockedStorage = false) {
@@ -16,10 +17,10 @@ function setup(t, blockedStorage = false) {
 }
 test('첫 화면·지역·업종·검색·검수 필터와 초기화가 실제 DOM에서 동작한다', (t) => {
   const window = setup(t), document = window.document;
-  assert.equal(document.querySelectorAll('.card').length, 23);
+  assert.equal(document.querySelectorAll('.card').length, 58);
   document.querySelector('[data-area="hongdae"]').click();
   const areaCount = document.querySelectorAll('.card').length;
-  assert.ok(areaCount > 0 && areaCount < 23);
+  assert.ok(areaCount > 0 && areaCount < 58);
   const category = document.querySelector('#category');
   category.value = 'sushi'; category.dispatchEvent(new window.Event('change'));
   assert.equal(document.querySelectorAll('.card').length, 1);
@@ -27,7 +28,7 @@ test('첫 화면·지역·업종·검색·검수 필터와 초기화가 실제 D
   query.value = 'no-such-restaurant'; query.dispatchEvent(new window.Event('input'));
   assert.ok(document.querySelector('.empty'));
   document.querySelector('#reset').click();
-  assert.equal(document.querySelectorAll('.card').length, 23);
+  assert.equal(document.querySelectorAll('.card').length, 58);
   document.querySelector('#verified').click();
   assert.equal(document.querySelectorAll('.card').length, 0);
   assert.ok(document.querySelector('.empty'));
@@ -49,7 +50,39 @@ test('한국어 전환은 필터를 유지하고 저장소가 차단되어도 �
   document.querySelector('[data-area="hongdae"]').click();
   document.querySelector('[data-language="ko"]').click();
   assert.equal(document.documentElement.lang, 'ko');
-  assert.match(document.querySelector('h1').textContent, /서울/);
+  assert.match(document.querySelector('h1').textContent, /한국/);
   assert.equal(document.querySelector('[data-area="hongdae"]').getAttribute('aria-pressed'), 'true');
   assert.ok(document.querySelectorAll('.card').length > 0);
+});
+
+test('도시별 후보·동네·건수가 바뀌며 다른 도시 필터가 남지 않는다', (t) => {
+  const window = setup(t), document = window.document;
+  document.querySelector('[data-area="hongdae"]').click();
+  document.querySelector('[data-city="busan"]').click();
+  assert.equal(document.querySelectorAll('.card').length, 18);
+  assert.equal(document.querySelector('[data-area="hongdae"]'), null);
+  assert.ok(document.querySelector('[data-area="haeundae"]'));
+  assert.ok([...document.querySelectorAll('.area-label')].every((item) => item.textContent.includes('Busan')));
+  document.querySelector('[data-area="haeundae"]').click();
+  assert.equal(document.querySelectorAll('.card').length, 9);
+  document.querySelector('[data-city="jeju"]').click();
+  assert.equal(document.querySelectorAll('.card').length, 17);
+  assert.ok(document.querySelector('[data-area="seogwipo-si"]'));
+  assert.equal(document.querySelector('[data-area="haeundae"]'), null);
+  document.querySelector('[data-area="seogwipo-si"]').click();
+  assert.equal(document.querySelectorAll('.card').length, 8);
+  document.querySelector('[data-language="ko"]').click();
+  assert.equal(document.querySelector('[data-city="jeju"]').getAttribute('aria-pressed'), 'true');
+  assert.equal(document.querySelectorAll('.card').length, 8);
+  document.querySelector('[data-city=""]').click();
+  assert.equal(document.querySelectorAll('.card').length, 58);
+});
+test('검색 요약 상세는 실제 쿠폰 ID 확인으로 오인하지 않도록 출처를 구분한다', (t) => {
+  const window = setup(t), document = window.document;
+  document.querySelector('[data-city="busan"]').click();
+  document.querySelector('[data-detail]').click();
+  assert.match(document.querySelector('.detail-offer small').textContent, /SOURCE OFFER SUMMARY/);
+  assert.match(document.querySelector('.detail-source').textContent, /Naver place search/);
+  assert.match(document.querySelector('#detail .primary').href, /map.naver.com/);
+  assert.match(document.querySelector('#detail').textContent, /Not confirmed/);
 });

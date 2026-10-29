@@ -1,0 +1,2631 @@
+{
+  "schemaVersion": 1,
+  "collectedAt": "2026-10-29T21:57:40+09:00",
+  "coupons": [
+    {
+      "id": "naver-place-2063997490-listing-014fa1e02530",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2063997490",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%82%B0%20%ED%95%B4%EC%9A%B4%EB%8C%80%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2063997490?lng=129.1711988&lat=35.1584901&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "네이버 예약시 10% 할인 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "아틀리에 스미다 미포점",
+        "nameLanguage": "ko",
+        "category": "cafe",
+        "categoryRaw": "케이크전문",
+        "area": {
+          "city": "busan",
+          "district": "haeundae",
+          "neighborhood": "haeundae",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "부산 해운대구 중동",
+        "coordinates": {
+          "latitude": 35.1584901,
+          "longitude": 129.1711988
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2063997490?lng=129.1711988&lat=35.1584901&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "네이버 예약시 10% 할인 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2099389769-listing-f93587ef65e0",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2099389769",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%82%B0%20%ED%95%B4%EC%9A%B4%EB%8C%80%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2099389769?lng=129.1583724&lat=35.1646133&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "알림받기 하면 리뷰이벤트 오렌지 에스프레소 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "듀플릿클래식",
+        "nameLanguage": "ko",
+        "category": "cafe",
+        "categoryRaw": "브런치카페",
+        "area": {
+          "city": "busan",
+          "district": "haeundae",
+          "neighborhood": "haeundae",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "부산 해운대구 우동",
+        "coordinates": {
+          "latitude": 35.1646133,
+          "longitude": 129.1583724
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2099389769?lng=129.1583724&lat=35.1646133&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "알림받기 하면 리뷰이벤트 오렌지 에스프레소 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2069672868-listing-33541461b527",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2069672868",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%82%B0%20%ED%95%B4%EC%9A%B4%EB%8C%80%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2069672868?lng=129.1769401&lat=35.1736102&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "[포토리뷰]막국수or메밀소바 쿠폰 외",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "족심당 해운대직영점",
+        "nameLanguage": "ko",
+        "category": "korean",
+        "categoryRaw": "족발,보쌈",
+        "area": {
+          "city": "busan",
+          "district": "haeundae",
+          "neighborhood": "haeundae",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "부산 해운대구 좌동",
+        "coordinates": {
+          "latitude": 35.1736102,
+          "longitude": 129.1769401
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2069672868?lng=129.1769401&lat=35.1736102&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "[포토리뷰]막국수or메밀소바 쿠폰 외",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2030664007-listing-930e025b0d26",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2030664007",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%82%B0%20%ED%95%B4%EC%9A%B4%EB%8C%80%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2030664007?lng=129.1309891&lat=35.1724756&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "군인,경찰관,소방관 5%할인 쿠폰 외",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "명지첫집 센텀시티점",
+        "nameLanguage": "ko",
+        "category": "korean",
+        "categoryRaw": "족발,보쌈",
+        "area": {
+          "city": "busan",
+          "district": "haeundae",
+          "neighborhood": "haeundae",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "부산 해운대구 우동",
+        "coordinates": {
+          "latitude": 35.1724756,
+          "longitude": 129.1309891
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2030664007?lng=129.1309891&lat=35.1724756&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "군인,경찰관,소방관 5%할인 쿠폰 외",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2002305738-listing-b6cff1c4fa1b",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2002305738",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%82%B0%20%ED%95%B4%EC%9A%B4%EB%8C%80%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2002305738?lng=129.1735983&lat=35.1730444&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "알림받기 하면 쫄깃낙지만두4개 100%공짜 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "청산1954 해운대직영점",
+        "nameLanguage": "ko",
+        "category": "korean",
+        "categoryRaw": "한식",
+        "area": {
+          "city": "busan",
+          "district": "haeundae",
+          "neighborhood": "haeundae",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "부산 해운대구 좌동",
+        "coordinates": {
+          "latitude": 35.1730444,
+          "longitude": 129.1735983
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2002305738?lng=129.1735983&lat=35.1730444&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "알림받기 하면 쫄깃낙지만두4개 100%공짜 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2099329717-listing-5c38bf9e248a",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2099329717",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%82%B0%20%ED%95%B4%EC%9A%B4%EB%8C%80%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2099329717?lng=129.1556907&lat=35.1624361&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "리뷰작성 시 밀코 1잔 증정 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "혼술바 포 해운대 부산",
+        "nameLanguage": "ko",
+        "category": "bar",
+        "categoryRaw": "바(BAR)",
+        "area": {
+          "city": "busan",
+          "district": "haeundae",
+          "neighborhood": "haeundae",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "부산 해운대구 우동",
+        "coordinates": {
+          "latitude": 35.1624361,
+          "longitude": 129.1556907
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2099329717?lng=129.1556907&lat=35.1624361&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "리뷰작성 시 밀코 1잔 증정 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2055558215-listing-3a04bf1825f7",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2055558215",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%82%B0%20%ED%95%B4%EC%9A%B4%EB%8C%80%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2055558215?lng=129.1754688&lat=35.1723068&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "알림받기 하면 더덕구이 제공 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "화담장어 해운대점",
+        "nameLanguage": "ko",
+        "category": "seafood",
+        "categoryRaw": "장어,먹장어요리",
+        "area": {
+          "city": "busan",
+          "district": "haeundae",
+          "neighborhood": "haeundae",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "부산 해운대구 좌동",
+        "coordinates": {
+          "latitude": 35.1723068,
+          "longitude": 129.1754688
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2055558215?lng=129.1754688&lat=35.1723068&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "알림받기 하면 더덕구이 제공 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2074918149-listing-2c91ac76ee98",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2074918149",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%82%B0%20%ED%95%B4%EC%9A%B4%EB%8C%80%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2074918149?lng=129.1708570&lat=35.1606476&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "김치찌개(7,000원) 무료 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "온탄",
+        "nameLanguage": "ko",
+        "category": "korean-bbq",
+        "categoryRaw": "육류,고기요리",
+        "area": {
+          "city": "busan",
+          "district": "haeundae",
+          "neighborhood": "haeundae",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "부산 해운대구 중동",
+        "coordinates": {
+          "latitude": 35.1606476,
+          "longitude": 129.170857
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2074918149?lng=129.1708570&lat=35.1606476&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "김치찌개(7,000원) 무료 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2017958844-listing-a6800cd4dd34",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2017958844",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%82%B0%20%ED%95%B4%EC%9A%B4%EB%8C%80%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2017958844?lng=129.1622845&lat=35.1615725&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "알림받기 하면 리뷰 작성시 뻥튀기 제공 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "다다부산 해운대본점",
+        "nameLanguage": "ko",
+        "category": "izakaya",
+        "categoryRaw": "요리주점",
+        "area": {
+          "city": "busan",
+          "district": "haeundae",
+          "neighborhood": "haeundae",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "부산 해운대구 중동",
+        "coordinates": {
+          "latitude": 35.1615725,
+          "longitude": 129.1622845
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2017958844?lng=129.1622845&lat=35.1615725&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "알림받기 하면 리뷰 작성시 뻥튀기 제공 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2085770856-listing-b54e2a13af87",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2085770856",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EC%A0%9C%EC%A3%BC%20%EC%A0%9C%EC%A3%BC%EC%8B%9C%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2085770856?lng=126.3668453&lat=33.4780253&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "예약시 흑돼지 10%할인 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "고깃결",
+        "nameLanguage": "ko",
+        "category": "korean-bbq",
+        "categoryRaw": "육류,고기요리",
+        "area": {
+          "city": "jeju",
+          "district": "jeju-si",
+          "neighborhood": "jeju-si",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "제주 제주시 애월읍",
+        "coordinates": {
+          "latitude": 33.4780253,
+          "longitude": 126.3668453
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2085770856?lng=126.3668453&lat=33.4780253&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "예약시 흑돼지 10%할인 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2007977681-listing-f1d42b9b0418",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2007977681",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EC%A0%9C%EC%A3%BC%20%EC%A0%9C%EC%A3%BC%EC%8B%9C%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2007977681?lng=126.4946246&lat=33.4837632&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "알림받기 하면 음료수증정쿠폰 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "만년호횟집 제주공항본점",
+        "nameLanguage": "ko",
+        "category": "seafood",
+        "categoryRaw": "생선회",
+        "area": {
+          "city": "jeju",
+          "district": "jeju-si",
+          "neighborhood": "jeju-si",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "제주 제주시 연동",
+        "coordinates": {
+          "latitude": 33.4837632,
+          "longitude": 126.4946246
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2007977681?lng=126.4946246&lat=33.4837632&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "알림받기 하면 음료수증정쿠폰 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2073211613-listing-d073685d40ec",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2073211613",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EC%A0%9C%EC%A3%BC%20%EC%A0%9C%EC%A3%BC%EC%8B%9C%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2073211613?lng=126.4930369&lat=33.4864290&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "알림받기 하면 돼지껍데기 제공 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "깡촌흑돼지 신제주점",
+        "nameLanguage": "ko",
+        "category": "korean-bbq",
+        "categoryRaw": "돼지고기구이",
+        "area": {
+          "city": "jeju",
+          "district": "jeju-si",
+          "neighborhood": "jeju-si",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "제주 제주시 연동",
+        "coordinates": {
+          "latitude": 33.486429,
+          "longitude": 126.4930369
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2073211613?lng=126.4930369&lat=33.4864290&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "알림받기 하면 돼지껍데기 제공 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2030767377-listing-edd63e9d742f",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2030767377",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EC%A0%9C%EC%A3%BC%20%EC%A0%9C%EC%A3%BC%EC%8B%9C%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2030767377?lng=126.4785204&lat=33.4890349&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "휘낭시에 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "온제",
+        "nameLanguage": "ko",
+        "category": "cafe",
+        "categoryRaw": "카페,디저트",
+        "area": {
+          "city": "jeju",
+          "district": "jeju-si",
+          "neighborhood": "jeju-si",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "제주 제주시 노형동",
+        "coordinates": {
+          "latitude": 33.4890349,
+          "longitude": 126.4785204
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2030767377?lng=126.4785204&lat=33.4890349&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "휘낭시에 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2072309544-listing-413ed51e2a6f",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2072309544",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EC%A0%9C%EC%A3%BC%20%EC%A0%9C%EC%A3%BC%EC%8B%9C%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2072309544?lng=126.2431216&lat=33.3289880&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "(리뷰이벤트)1번 말차 한잔 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "바언제주 티하우스",
+        "nameLanguage": "ko",
+        "category": "cafe",
+        "categoryRaw": "차",
+        "area": {
+          "city": "jeju",
+          "district": "jeju-si",
+          "neighborhood": "jeju-si",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "제주 제주시 한경면",
+        "coordinates": {
+          "latitude": 33.328988,
+          "longitude": 126.2431216
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2072309544?lng=126.2431216&lat=33.3289880&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "(리뷰이벤트)1번 말차 한잔 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2047126213-listing-4f160513486c",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2047126213",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EC%A0%9C%EC%A3%BC%20%EC%A0%9C%EC%A3%BC%EC%8B%9C%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2047126213?lng=126.4317067&lat=33.4870956&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "하이볼 3000원 할인 쿠폰 외",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "이자카야 우규 제주외도점",
+        "nameLanguage": "ko",
+        "category": "izakaya",
+        "categoryRaw": "이자카야",
+        "area": {
+          "city": "jeju",
+          "district": "jeju-si",
+          "neighborhood": "jeju-si",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "제주 제주시 외도일동",
+        "coordinates": {
+          "latitude": 33.4870956,
+          "longitude": 126.4317067
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2047126213?lng=126.4317067&lat=33.4870956&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "하이볼 3000원 할인 쿠폰 외",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2058019567-listing-66b6cf2d79cb",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2058019567",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EC%A0%9C%EC%A3%BC%20%EC%A0%9C%EC%A3%BC%EC%8B%9C%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2058019567?lng=126.5469685&lat=33.4967370&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "10% 할인 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "애프터",
+        "nameLanguage": "ko",
+        "category": "cafe",
+        "categoryRaw": "카페,디저트",
+        "area": {
+          "city": "jeju",
+          "district": "jeju-si",
+          "neighborhood": "jeju-si",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "제주 제주시 이도이동",
+        "coordinates": {
+          "latitude": 33.496737,
+          "longitude": 126.5469685
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2058019567?lng=126.5469685&lat=33.4967370&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "10% 할인 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2075653537-listing-63abddc690c0",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2075653537",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EC%A0%9C%EC%A3%BC%20%EC%A0%9C%EC%A3%BC%EC%8B%9C%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2075653537?lng=126.4765748&lat=33.4890315&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "고~소한 콩고물 아이스크림 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "우이락 제주노형점",
+        "nameLanguage": "ko",
+        "category": "korean",
+        "categoryRaw": "한식",
+        "area": {
+          "city": "jeju",
+          "district": "jeju-si",
+          "neighborhood": "jeju-si",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "제주 제주시 노형동",
+        "coordinates": {
+          "latitude": 33.4890315,
+          "longitude": 126.4765748
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2075653537?lng=126.4765748&lat=33.4890315&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "고~소한 콩고물 아이스크림 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2009797368-listing-fc3d95fb8e1d",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2009797368",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EC%A0%9C%EC%A3%BC%20%EC%A0%9C%EC%A3%BC%EC%8B%9C%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2009797368?lng=126.5307517&lat=33.4986971&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "(리뷰)가라아게 3p 쿠폰 외",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "멘지 제주시청점",
+        "nameLanguage": "ko",
+        "category": "japanese",
+        "categoryRaw": "일본식라면",
+        "area": {
+          "city": "jeju",
+          "district": "jeju-si",
+          "neighborhood": "jeju-si",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "제주 제주시 이도이동",
+        "coordinates": {
+          "latitude": 33.4986971,
+          "longitude": 126.5307517
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2009797368?lng=126.5307517&lat=33.4986971&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "(리뷰)가라아게 3p 쿠폰 외",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2073011457-listing-28732574a8b2",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2073011457",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EC%A0%9C%EC%A3%BC%20%EC%84%9C%EA%B7%80%ED%8F%AC%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2073011457?lng=126.3282256&lat=33.2868369&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:39+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "50% 할인 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "탐탐제주 귤직송감성카페 신화월드점",
+        "nameLanguage": "ko",
+        "category": "cafe",
+        "categoryRaw": "카페,디저트",
+        "area": {
+          "city": "jeju",
+          "district": "seogwipo-si",
+          "neighborhood": "seogwipo-si",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "제주 서귀포시 안덕면",
+        "coordinates": {
+          "latitude": 33.2868369,
+          "longitude": 126.3282256
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2073011457?lng=126.3282256&lat=33.2868369&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "50% 할인 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2039464227-listing-1719a98e1409",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2039464227",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EC%A0%9C%EC%A3%BC%20%EC%84%9C%EA%B7%80%ED%8F%AC%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2039464227?lng=126.5580282&lat=33.2524814&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:39+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "알림받기 하면 버터감자 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "야사이마키 미깡",
+        "nameLanguage": "ko",
+        "category": "japanese",
+        "categoryRaw": "일식당",
+        "area": {
+          "city": "jeju",
+          "district": "seogwipo-si",
+          "neighborhood": "seogwipo-si",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "제주 서귀포시 서귀동",
+        "coordinates": {
+          "latitude": 33.2524814,
+          "longitude": 126.5580282
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2039464227?lng=126.5580282&lat=33.2524814&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "알림받기 하면 버터감자 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2028498249-listing-267fe5a0c355",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2028498249",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EC%A0%9C%EC%A3%BC%20%EC%84%9C%EA%B7%80%ED%8F%AC%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2028498249?lng=126.5233307&lat=33.2458012&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:39+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "탄산음료 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "청담간장게장",
+        "nameLanguage": "ko",
+        "category": "seafood",
+        "categoryRaw": "게요리",
+        "area": {
+          "city": "jeju",
+          "district": "seogwipo-si",
+          "neighborhood": "seogwipo-si",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "제주 서귀포시 서호동",
+        "coordinates": {
+          "latitude": 33.2458012,
+          "longitude": 126.5233307
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2028498249?lng=126.5233307&lat=33.2458012&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "탄산음료 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2029207674-listing-0ba590e37525",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2029207674",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EC%A0%9C%EC%A3%BC%20%EC%84%9C%EA%B7%80%ED%8F%AC%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2029207674?lng=126.5623858&lat=33.2494927&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:39+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "알림받기 하면 요거트아이스크림 한스쿱 증정 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "사실빙 서귀포올레시장점",
+        "nameLanguage": "ko",
+        "category": "cafe",
+        "categoryRaw": "빙수",
+        "area": {
+          "city": "jeju",
+          "district": "seogwipo-si",
+          "neighborhood": "seogwipo-si",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "제주 서귀포시 서귀동",
+        "coordinates": {
+          "latitude": 33.2494927,
+          "longitude": 126.5623858
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2029207674?lng=126.5623858&lat=33.2494927&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "알림받기 하면 요거트아이스크림 한스쿱 증정 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2052085176-listing-f0834e6256d3",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2052085176",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EC%A0%9C%EC%A3%BC%20%EC%84%9C%EA%B7%80%ED%8F%AC%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2052085176?lng=126.5230960&lat=33.2457092&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:39+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "알림받기 하면 바삭한 누룽지 증정 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "파도다",
+        "nameLanguage": "ko",
+        "category": "cafe",
+        "categoryRaw": "카페,디저트",
+        "area": {
+          "city": "jeju",
+          "district": "seogwipo-si",
+          "neighborhood": "seogwipo-si",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "제주 서귀포시 서호동",
+        "coordinates": {
+          "latitude": 33.2457092,
+          "longitude": 126.523096
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2052085176?lng=126.5230960&lat=33.2457092&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "알림받기 하면 바삭한 누룽지 증정 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2054676885-listing-6c5af2aec96f",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2054676885",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EC%A0%9C%EC%A3%BC%20%EC%84%9C%EA%B7%80%ED%8F%AC%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2054676885?lng=126.4223842&lat=33.2518817&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:39+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "베이커리 주문 시 커피 할인 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "파파스브로트",
+        "nameLanguage": "ko",
+        "category": "western",
+        "categoryRaw": "양식",
+        "area": {
+          "city": "jeju",
+          "district": "seogwipo-si",
+          "neighborhood": "seogwipo-si",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "제주 서귀포시 중문동",
+        "coordinates": {
+          "latitude": 33.2518817,
+          "longitude": 126.4223842
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2054676885?lng=126.4223842&lat=33.2518817&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "베이커리 주문 시 커피 할인 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2056661431-listing-75656f0ebd8d",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2056661431",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EC%A0%9C%EC%A3%BC%20%EC%84%9C%EA%B7%80%ED%8F%AC%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2056661431?lng=126.3043051&lat=33.2526412&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:39+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "1,000원 할인 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "돌보름식당",
+        "nameLanguage": "ko",
+        "category": "korean",
+        "categoryRaw": "한식",
+        "area": {
+          "city": "jeju",
+          "district": "seogwipo-si",
+          "neighborhood": "seogwipo-si",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "제주 서귀포시 안덕면",
+        "coordinates": {
+          "latitude": 33.2526412,
+          "longitude": 126.3043051
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2056661431?lng=126.3043051&lat=33.2526412&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "1,000원 할인 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2003035630-listing-eba93f560019",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2003035630",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EC%A0%9C%EC%A3%BC%20%EC%84%9C%EA%B7%80%ED%8F%AC%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2003035630?lng=126.3046340&lat=33.2399496&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:39+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "OPEN WELCOME 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "빌라드사계",
+        "nameLanguage": "ko",
+        "category": "western",
+        "categoryRaw": "양식",
+        "area": {
+          "city": "jeju",
+          "district": "seogwipo-si",
+          "neighborhood": "seogwipo-si",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "제주 서귀포시 안덕면",
+        "coordinates": {
+          "latitude": 33.2399496,
+          "longitude": 126.304634
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2003035630?lng=126.3046340&lat=33.2399496&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "OPEN WELCOME 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2059277921-listing-0ee40fa6f256",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2059277921",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%82%B0%20%EA%B4%91%EC%95%88%EB%A6%AC%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2059277921?lng=129.1187663&lat=35.1555321&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "후식 물냉면 제공 쿠폰 외",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "정백담오리 광안리본점",
+        "nameLanguage": "ko",
+        "category": "korean",
+        "categoryRaw": "오리요리",
+        "area": {
+          "city": "busan",
+          "district": "suyeong",
+          "neighborhood": "gwangalli",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "부산 수영구 민락동",
+        "coordinates": {
+          "latitude": 35.1555321,
+          "longitude": 129.1187663
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2059277921?lng=129.1187663&lat=35.1555321&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "후식 물냉면 제공 쿠폰 외",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2035356892-listing-8a1034811b09",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2035356892",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%82%B0%20%EA%B4%91%EC%95%88%EB%A6%AC%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2035356892?lng=129.1147272&lat=35.1493254&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "유자 파운드 1조각 증정 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "유유실",
+        "nameLanguage": "ko",
+        "category": "cafe",
+        "categoryRaw": "카페,디저트",
+        "area": {
+          "city": "busan",
+          "district": "suyeong",
+          "neighborhood": "gwangalli",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "부산 수영구 광안동",
+        "coordinates": {
+          "latitude": 35.1493254,
+          "longitude": 129.1147272
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2035356892?lng=129.1147272&lat=35.1493254&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "유자 파운드 1조각 증정 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2032435119-listing-c2531a0bd3ca",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2032435119",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%82%B0%20%EA%B4%91%EC%95%88%EB%A6%AC%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2032435119?lng=129.1199578&lat=35.1546704&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "알림받기 하면 어니언링 증정 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "원피스피자",
+        "nameLanguage": "ko",
+        "category": "western",
+        "categoryRaw": "피자",
+        "area": {
+          "city": "busan",
+          "district": "suyeong",
+          "neighborhood": "gwangalli",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "부산 수영구 민락동",
+        "coordinates": {
+          "latitude": 35.1546704,
+          "longitude": 129.1199578
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2032435119?lng=129.1199578&lat=35.1546704&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "알림받기 하면 어니언링 증정 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2051545911-listing-9268d1a93975",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2051545911",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%82%B0%20%EA%B4%91%EC%95%88%EB%A6%AC%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2051545911?lng=129.1152313&lat=35.1616750&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "네이버 예약시 리뷰 목살100g 증정 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "일미리",
+        "nameLanguage": "ko",
+        "category": "korean-bbq",
+        "categoryRaw": "돼지고기구이",
+        "area": {
+          "city": "busan",
+          "district": "suyeong",
+          "neighborhood": "gwangalli",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "부산 수영구 광안동",
+        "coordinates": {
+          "latitude": 35.161675,
+          "longitude": 129.1152313
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2051545911?lng=129.1152313&lat=35.1616750&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "네이버 예약시 리뷰 목살100g 증정 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2051086427-listing-f56208d9ddfc",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2051086427",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%82%B0%20%EA%B4%91%EC%95%88%EB%A6%AC%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2051086427?lng=129.1162289&lat=35.1513293&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "네이버 예약시 광아라쿠폰  쿠폰 외",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "광아라",
+        "nameLanguage": "ko",
+        "category": "izakaya",
+        "categoryRaw": "요리주점",
+        "area": {
+          "city": "busan",
+          "district": "suyeong",
+          "neighborhood": "gwangalli",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "부산 수영구 광안동",
+        "coordinates": {
+          "latitude": 35.1513293,
+          "longitude": 129.1162289
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2051086427?lng=129.1162289&lat=35.1513293&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "네이버 예약시 광아라쿠폰  쿠폰 외",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2023128836-listing-d086df51f1c3",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2023128836",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%82%B0%20%EA%B4%91%EC%95%88%EB%A6%AC%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2023128836?lng=129.1170044&lat=35.1521233&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "알림받기 하면 5,000원 할인 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "광안리바당집",
+        "nameLanguage": "ko",
+        "category": "seafood",
+        "categoryRaw": "생선회",
+        "area": {
+          "city": "busan",
+          "district": "suyeong",
+          "neighborhood": "gwangalli",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "부산 수영구 광안동",
+        "coordinates": {
+          "latitude": 35.1521233,
+          "longitude": 129.1170044
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2023128836?lng=129.1170044&lat=35.1521233&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "알림받기 하면 5,000원 할인 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2000013931-listing-3195514fb7ef",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2000013931",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%82%B0%20%EA%B4%91%EC%95%88%EB%A6%AC%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2000013931?lng=129.1315306&lat=35.1553209&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "리뷰이벤트 요구르트 샤베트 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "사계상회",
+        "nameLanguage": "ko",
+        "category": "seafood",
+        "categoryRaw": "생선회",
+        "area": {
+          "city": "busan",
+          "district": "suyeong",
+          "neighborhood": "gwangalli",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "부산 수영구 민락동",
+        "coordinates": {
+          "latitude": 35.1553209,
+          "longitude": 129.1315306
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2000013931?lng=129.1315306&lat=35.1553209&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "리뷰이벤트 요구르트 샤베트 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2033285647-listing-42c0b7249e56",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2033285647",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%82%B0%20%EA%B4%91%EC%95%88%EB%A6%AC%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2033285647?lng=129.1216984&lat=35.1567982&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "리뷰이벤트-칵테일 1잔 무료 쿠폰",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "야화 혼술바 민락점",
+        "nameLanguage": "ko",
+        "category": "bar",
+        "categoryRaw": "바(BAR)",
+        "area": {
+          "city": "busan",
+          "district": "suyeong",
+          "neighborhood": "gwangalli",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "부산 수영구 민락동",
+        "coordinates": {
+          "latitude": 35.1567982,
+          "longitude": 129.1216984
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2033285647?lng=129.1216984&lat=35.1567982&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "리뷰이벤트-칵테일 1잔 무료 쿠폰",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    },
+    {
+      "id": "naver-place-2041468035-listing-db42b82a12f9",
+      "source": {
+        "provider": "naver-place",
+        "placeId": "2041468035",
+        "couponId": null,
+        "promotionId": null,
+        "listingUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%82%B0%20%EA%B4%91%EC%95%88%EB%A6%AC%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+        "couponUrl": "https://map.naver.com/p/entry/place/2041468035?lng=129.1172494&lat=35.1557634&placePath=%2F&entry=pll&searchType=place",
+        "observedAt": "2026-10-29T21:57:40+09:00",
+        "evidenceLevel": "search-listing",
+        "titleRaw": "영수증리뷰 아메리카노 쿠폰 외",
+        "conditionTypeRaw": null,
+        "useTypeRaw": null,
+        "couponTypeRaw": null
+      },
+      "merchant": {
+        "name": "사실빙 광안점",
+        "nameLanguage": "ko",
+        "category": "cafe",
+        "categoryRaw": "빙수",
+        "area": {
+          "city": "busan",
+          "district": "suyeong",
+          "neighborhood": "gwangalli",
+          "sourceFilterId": null
+        },
+        "address": null,
+        "areaTextRaw": "부산 수영구 광안동",
+        "coordinates": {
+          "latitude": 35.1557634,
+          "longitude": 129.1172494
+        },
+        "placeUrl": "https://map.naver.com/p/entry/place/2041468035?lng=129.1172494&lat=35.1557634&placePath=%2F&entry=pll&searchType=place"
+      },
+      "benefit": {
+        "title": "영수증리뷰 아메리카노 쿠폰 외",
+        "language": "ko",
+        "kind": "unknown",
+        "amount": null,
+        "percentage": null,
+        "verifiedSummary": null
+      },
+      "validity": {
+        "kind": "unknown",
+        "startsAt": null,
+        "endsAt": null,
+        "daysAfterIssue": null
+      },
+      "conditions": {
+        "acquisition": null,
+        "redemption": null,
+        "minimumSpend": null,
+        "eligibleItems": null,
+        "daysAndHours": null,
+        "stacking": null
+      },
+      "travelerRequirements": {
+        "naverAccount": "unknown",
+        "koreanPhone": "unknown",
+        "identityVerification": "unknown",
+        "paymentMethod": null,
+        "eligibility": "unknown"
+      },
+      "redemption": {
+        "channel": "unknown",
+        "steps": []
+      },
+      "review": {
+        "status": "needs-review",
+        "checkedAt": null,
+        "evidenceUrl": null,
+        "note": "네이버 검색의 매장 쿠폰 요약과 지도 링크 확인. 쿠폰 식별자·유효기간·세부 조건·외국인 사용 요건은 미확인."
+      }
+    }
+  ]
+}
