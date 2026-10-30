@@ -14,7 +14,10 @@
           "hapjeong",
           "mangwon",
           "gongdeok",
-          "sinchon"
+          "sinchon",
+          "myeongdong",
+          "gangnam",
+          "jongno"
         ],
         "discoveryUrl": "https://booking.map.naver.com/promotions/pioa3d2oskuc"
       },
@@ -26,7 +29,8 @@
         },
         "neighborhoods": [
           "haeundae",
-          "gwangalli"
+          "gwangalli",
+          "seomyeon"
         ],
         "discoveryUrl": "https://search.naver.com/search.naver?query=부산%20음식점%20쿠폰"
       },
@@ -38,7 +42,8 @@
         },
         "neighborhoods": [
           "jeju-si",
-          "seogwipo-si"
+          "seogwipo-si",
+          "aewol"
         ],
         "discoveryUrl": "https://search.naver.com/search.naver?query=제주%20음식점%20쿠폰"
       }
@@ -54,7 +59,8 @@
       "seafood",
       "sushi",
       "cafe",
-      "western"
+      "western",
+      "chinese"
     ],
     "basis": "사용자가 서울·부산·제주를 지정. 제주는 여행 목적지 제주도 범위로 제주시·서귀포시를 포함. 실제 출처가 확인된 지역부터 후보를 추가한다."
   },

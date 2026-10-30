@@ -20,3 +20,5 @@
 부산·제주 후보의 근거와 종료 기획전 제외 기준은 [추가 조사](../../plan/research/three-city-2026-10-29.md)에 있다. `merchant.area.city`는 `seoul`, `busan`, `jeju`이며 제주 선택은 제주도 여행 목적지를 뜻한다. 상세 도로명 주소를 확인하지 못한 검색 결과의 지역 원문은 `merchant.areaTextRaw`에 보존한다.
 
 화면의 매장명은 [한영 이름 사전](../merchants/names.json)에서 매장 ID로 조회한다. 수집 원문 `merchant.name`을 그대로 표시하지 않으며 한국어·영문·원문 별칭으로 검색한다. 이름 확인 근거는 [매장명 조사](../../plan/research/merchant-names-2026-10-29.md)에 있다.
+
+2026-10-30 추가 후보는 `naver-expanded.seed.json`, 영어 요약은 `english-summaries.json`에 있습니다. 요약은 수집 원문의 편집 번역이며 검수된 혜택으로 승격하지 않습니다. `src/lib/offer-discovery.mjs`의 혜택·조건 분류도 원문 표시에 근거하며 표시되지 않은 조건이 없다는 뜻이 아닙니다. 외부 제공처 링크는 `data/discount-sources.json`으로 관리하며 개별 쿠폰과 분리합니다.
