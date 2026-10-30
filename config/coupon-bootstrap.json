@@ -43,7 +43,8 @@
         "neighborhoods": [
           "jeju-si",
           "seogwipo-si",
-          "aewol"
+          "aewol",
+          "hallim"
         ],
         "discoveryUrl": "https://search.naver.com/search.naver?query=제주%20음식점%20쿠폰"
       }

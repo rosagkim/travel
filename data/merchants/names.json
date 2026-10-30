@@ -710,5 +710,29 @@
     "koSourceUrl": "https://search.naver.com/search.naver?query=%EC%A0%9C%EC%A3%BC%20%EC%95%A0%EC%9B%94%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
     "enSourceUrl": null,
     "checkedAt": "2026-10-30T11:32:11+09:00"
+  },
+  "2023376520": {
+    "ko": "라온파인다인",
+    "en": "Raonpaindain",
+    "enType": "romanized",
+    "koSourceUrl": "https://search.naver.com/search.naver?query=%EC%A0%9C%EC%A3%BC%20%ED%95%9C%EB%A6%BC%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+    "enSourceUrl": null,
+    "checkedAt": "2026-10-30T12:28:24+09:00"
+  },
+  "2094507296": {
+    "ko": "코스트고식당 협재",
+    "en": "Koseuteugosikdang Hyeopjae",
+    "enType": "romanized",
+    "koSourceUrl": "https://search.naver.com/search.naver?query=%EC%A0%9C%EC%A3%BC%20%ED%95%9C%EB%A6%BC%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+    "enSourceUrl": null,
+    "checkedAt": "2026-10-30T12:28:24+09:00"
+  },
+  "1572193737": {
+    "ko": "오리샤브",
+    "en": "Orisyabeu",
+    "enType": "romanized",
+    "koSourceUrl": "https://search.naver.com/search.naver?query=%EC%A0%9C%EC%A3%BC%20%EC%97%B0%EB%8F%99%20%EC%9D%8C%EC%8B%9D%EC%A0%90%20%EC%BF%A0%ED%8F%B0",
+    "enSourceUrl": null,
+    "checkedAt": "2026-10-30T12:28:52+09:00"
   }
 }

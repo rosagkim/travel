@@ -3,10 +3,10 @@ import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
 import { merchantNamePair, merchantSearchNames, validateMerchantNames } from '../src/lib/merchant-names.mjs';
 const catalog = JSON.parse(readFileSync(new URL('../data/merchants/names.json', import.meta.url)));
-const coupons = ['naver-food.seed.json', 'naver-busan-jeju.seed.json', 'naver-expanded.seed.json'].flatMap((file) => JSON.parse(readFileSync(new URL(`../data/coupons/${file}`, import.meta.url))).coupons);
-test('89개 매장의 한영 이름과 출처를 검사하고 수집 원문을 검색 별칭으로 유지한다', () => {
+const coupons = ['naver-food.seed.json', 'naver-busan-jeju.seed.json', 'naver-expanded.seed.json', 'naver-jeju-followup.seed.json'].flatMap((file) => JSON.parse(readFileSync(new URL(`../data/coupons/${file}`, import.meta.url))).coupons);
+test('92개 매장의 한영 이름과 출처를 검사하고 수집 원문을 검색 별칭으로 유지한다', () => {
   assert.deepEqual(validateMerchantNames(coupons, catalog), []);
-  assert.equal(new Set(coupons.map((coupon) => coupon.source.placeId)).size, 89);
+  assert.equal(new Set(coupons.map((coupon) => coupon.source.placeId)).size, 92);
   for (const coupon of coupons) {
     const ko = merchantNamePair(coupon.source.placeId, catalog, 'ko');
     const en = merchantNamePair(coupon.source.placeId, catalog, 'en');

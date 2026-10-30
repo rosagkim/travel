@@ -2,11 +2,11 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
 import { offerSignals, offerSummary, filterOfferSignals, validateEnglishSummaries } from '../src/lib/offer-discovery.mjs';
-const coupons = ['naver-food.seed.json', 'naver-busan-jeju.seed.json', 'naver-expanded.seed.json'].flatMap((file) => JSON.parse(readFileSync(new URL(`../data/coupons/${file}`, import.meta.url))).coupons);
+const coupons = ['naver-food.seed.json', 'naver-busan-jeju.seed.json', 'naver-expanded.seed.json', 'naver-jeju-followup.seed.json'].flatMap((file) => JSON.parse(readFileSync(new URL(`../data/coupons/${file}`, import.meta.url))).coupons);
 const summaries = JSON.parse(readFileSync(new URL('../data/coupons/english-summaries.json', import.meta.url)));
 const find = (title) => coupons.find((coupon) => coupon.benefit.title === title);
-test('95개 후보에 영문 요약이 있으며 원문과 검수 상태를 바꾸지 않는다', () => {
-  assert.equal(coupons.length, 95);
+test('98개 후보에 영문 요약이 있으며 원문과 검수 상태를 바꾸지 않는다', () => {
+  assert.equal(coupons.length, 98);
   assert.deepEqual(validateEnglishSummaries(coupons, summaries), []);
   for (const coupon of coupons) {
     assert.equal(offerSummary(coupon, summaries, 'ko'), coupon.benefit.title);

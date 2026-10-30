@@ -1,0 +1,96 @@
+[
+  {
+    "id": "tamnao-SP00001977",
+    "provider": "Tamnao",
+    "productId": "SP00001977",
+    "city": "jeju",
+    "name": {
+      "ko": "제주애월 해물한상",
+      "en": "Jeju Aewol Haemul Hansang"
+    },
+    "nameEnglishType": "romanized",
+    "url": "https://www.tamnao.com/web/sp/detailPrdt.do?prdtNum=SP00001977&partner=visitjeju",
+    "priceSourceUrl": "https://www.tamnao.com/web/sp/getOptionList.ajax?prdtNum=SP00001977&spDivSn=2&aplDt=",
+    "observedAt": "2026-10-30T12:29:06+09:00",
+    "evidenceLevel": "public-product-and-option-price",
+    "purchaseType": "prepaid-voucher",
+    "validityDaysFromPurchase": 60,
+    "waitHoursAfterPurchase": 3,
+    "eligibility": "unknown",
+    "requirements": {
+      "ko": "개별여행객 대상. 정기투어·단체관광·택시관광 등 기사를 동반한 여행은 사용 불가. 다른 할인과 중복 불가. 외국인 결제·가입·전화번호 요건은 미확인.",
+      "en": "For independent travelers. Regular tours, group tours and chauffeur-accompanied trips such as taxi tours are excluded. Cannot be combined with other discounts. Foreigner checkout, account and phone requirements remain unconfirmed."
+    },
+    "options": [
+      {
+        "id": "1",
+        "label": {
+          "ko": "2인",
+          "en": "For 2 people"
+        },
+        "currency": "KRW",
+        "normalPrice": 78000,
+        "salePrice": 75000,
+        "listedAvailable": true
+      },
+      {
+        "id": "2",
+        "label": {
+          "ko": "3인",
+          "en": "For 3 people"
+        },
+        "currency": "KRW",
+        "normalPrice": 117000,
+        "salePrice": 110000,
+        "listedAvailable": true
+      },
+      {
+        "id": "3",
+        "label": {
+          "ko": "4인",
+          "en": "For 4 people"
+        },
+        "currency": "KRW",
+        "normalPrice": 156000,
+        "salePrice": 150000,
+        "listedAvailable": true
+      }
+    ]
+  },
+  {
+    "id": "tamnao-SP00002048",
+    "provider": "Tamnao",
+    "productId": "SP00002048",
+    "city": "jeju",
+    "name": {
+      "ko": "드르쿰다 카페 10,000원 자유이용권",
+      "en": "Deureukumda Cafe KRW 10,000 Voucher"
+    },
+    "nameEnglishType": "romanized",
+    "url": "https://www.tamnao.com/web/sp/detailPrdt.do?prdtNum=SP00002048&partner=visitjeju",
+    "priceSourceUrl": "https://www.tamnao.com/web/sp/getOptionList.ajax?prdtNum=SP00002048&spDivSn=1&aplDt=",
+    "observedAt": "2026-10-30T12:29:06+09:00",
+    "evidenceLevel": "public-product-and-option-price",
+    "purchaseType": "prepaid-voucher",
+    "validityDaysFromPurchase": 30,
+    "waitHoursAfterPurchase": null,
+    "eligibility": "unknown",
+    "requirements": {
+      "ko": "개별여행객 대상. 정기투어·단체관광·택시관광 등 기사를 동반한 여행은 사용 불가. 다른 할인과 중복 불가. 외국인 결제·가입·전화번호 요건은 미확인. 사용 가능한 카페·지점은 제공처에서 확인해야 합니다.",
+      "en": "For independent travelers. Regular tours, group tours and chauffeur-accompanied trips such as taxi tours are excluded. Cannot be combined with other discounts. Foreigner checkout, account and phone requirements remain unconfirmed. Confirm the eligible cafe/branch at the provider."
+    },
+    "options": [
+      {
+        "id": "1",
+        "label": {
+          "ko": "1인권",
+          "en": "One-person voucher"
+        },
+        "currency": "KRW",
+        "normalPrice": 10000,
+        "salePrice": 9000,
+        "listedAvailable": true
+      }
+    ]
+  }
+]

@@ -22,3 +22,5 @@
 화면의 매장명은 [한영 이름 사전](../merchants/names.json)에서 매장 ID로 조회한다. 수집 원문 `merchant.name`을 그대로 표시하지 않으며 한국어·영문·원문 별칭으로 검색한다. 이름 확인 근거는 [매장명 조사](../../plan/research/merchant-names-2026-10-29.md)에 있다.
 
 2026-10-30 추가 후보는 `naver-expanded.seed.json`, 영어 요약은 `english-summaries.json`에 있습니다. 요약은 수집 원문의 편집 번역이며 검수된 혜택으로 승격하지 않습니다. `src/lib/offer-discovery.mjs`의 혜택·조건 분류도 원문 표시에 근거하며 표시되지 않은 조건이 없다는 뜻이 아닙니다. 외부 제공처 링크는 `data/discount-sources.json`으로 관리하며 개별 쿠폰과 분리합니다.
+
+2차 제주 후보는 `naver-jeju-followup.seed.json`입니다. `data/partner-offers.json`은 별도 탐나오 선결제 상품이며 네이버 후보 스키마·수에 합치지 않습니다. `src/lib/partner-offers.mjs`는 실제 정상가보다 낮고 0원이 아닌 판매가만 허용합니다. 유효기간은 구매일 기준 상대 기한이며 특정 날짜의 만료일로 추정하지 않습니다.

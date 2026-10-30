@@ -3,29 +3,32 @@ import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
 import { Window } from 'happy-dom';
 import { filterCoupons, publicationIssues } from '../src/lib/coupons.mjs';
+import { optionSaving } from '../src/lib/partner-offers.mjs';
+import { buildOfferLink, linkedOffer } from '../src/lib/travel-links.mjs';
+const partnerOffers = JSON.parse(readFileSync(new URL('../data/partner-offers.json', import.meta.url)));
 import { offerSignals, offerSummary, filterOfferSignals } from '../src/lib/offer-discovery.mjs';
 const summaries = JSON.parse(readFileSync(new URL('../data/coupons/english-summaries.json', import.meta.url)));
 const discountSources = JSON.parse(readFileSync(new URL('../data/discount-sources.json', import.meta.url)));
 import { merchantNamePair, merchantSearchNames } from '../src/lib/merchant-names.mjs';
 const merchantNames = JSON.parse(readFileSync(new URL('../data/merchants/names.json', import.meta.url)));
-const parts = ['naver-food.seed.json', 'naver-busan-jeju.seed.json', 'naver-expanded.seed.json'].map((file) => JSON.parse(readFileSync(new URL(`../data/coupons/${file}`, import.meta.url))));
+const parts = ['naver-food.seed.json', 'naver-busan-jeju.seed.json', 'naver-expanded.seed.json', 'naver-jeju-followup.seed.json'].map((file) => JSON.parse(readFileSync(new URL(`../data/coupons/${file}`, import.meta.url))));
 const dataset = { schemaVersion: 1, collectedAt: parts.map((part) => part.collectedAt).sort().at(-1), coupons: parts.flatMap((part) => part.coupons) };
 const config = JSON.parse(readFileSync(new URL('../config/coupon-bootstrap.json', import.meta.url)));
 const source = readFileSync(new URL('../src/main.js', import.meta.url), 'utf8').replace(/^import .*;\n/gm, '');
-function setup(t, blockedStorage = false) {
-  const window = new Window({ url: 'https://rosagkim.github.io/travel/' });
+function setup(t, blockedStorage = false, url = 'https://rosagkim.github.io/travel/') {
+  const window = new Window({ url });
   window.document.body.innerHTML = '<div id="app"></div>';
   const storage = blockedStorage ? { getItem() { throw new Error('blocked'); }, setItem() { throw new Error('blocked'); } } : window.localStorage;
-  new Function('document', 'localStorage', 'dataset', 'config', 'filterCoupons', 'publicationIssues', 'merchantNames', 'merchantNamePair', 'merchantSearchNames', 'summaries', 'discountSources', 'offerSignals', 'offerSummary', 'filterOfferSignals', source)(window.document, storage, dataset, config, filterCoupons, publicationIssues, merchantNames, merchantNamePair, merchantSearchNames, summaries, discountSources, offerSignals, offerSummary, filterOfferSignals);
+  new Function('document', 'localStorage', 'dataset', 'config', 'filterCoupons', 'publicationIssues', 'merchantNames', 'merchantNamePair', 'merchantSearchNames', 'summaries', 'discountSources', 'offerSignals', 'offerSummary', 'filterOfferSignals', 'partnerOffers', 'optionSaving', 'buildOfferLink', 'linkedOffer', source)(window.document, storage, dataset, config, filterCoupons, publicationIssues, merchantNames, merchantNamePair, merchantSearchNames, summaries, discountSources, offerSignals, offerSummary, filterOfferSignals, partnerOffers, optionSaving, buildOfferLink, linkedOffer);
   t.after(() => window.happyDOM.abort());
   return window;
 }
 test('첫 화면·지역·업종·검색·검수 필터와 초기화가 실제 DOM에서 동작한다', (t) => {
   const window = setup(t), document = window.document;
-  assert.equal(document.querySelectorAll('.card').length, 95);
+  assert.equal(document.querySelectorAll('.card').length, 98);
   document.querySelector('[data-area="hongdae"]').click();
   const areaCount = document.querySelectorAll('.card').length;
-  assert.ok(areaCount > 0 && areaCount < 95);
+  assert.ok(areaCount > 0 && areaCount < 98);
   const category = document.querySelector('#category');
   category.value = 'sushi'; category.dispatchEvent(new window.Event('change'));
   assert.equal(document.querySelectorAll('.card').length, 1);
@@ -33,7 +36,7 @@ test('첫 화면·지역·업종·검색·검수 필터와 초기화가 실제 D
   query.value = 'no-such-restaurant'; query.dispatchEvent(new window.Event('input'));
   assert.ok(document.querySelector('.empty'));
   document.querySelector('#reset').click();
-  assert.equal(document.querySelectorAll('.card').length, 95);
+  assert.equal(document.querySelectorAll('.card').length, 98);
   document.querySelector('#verified').click();
   assert.equal(document.querySelectorAll('.card').length, 0);
   assert.ok(document.querySelector('.empty'));
@@ -71,7 +74,7 @@ test('도시별 후보·동네·건수가 바뀌며 다른 도시 필터가 남�
   document.querySelector('[data-area="haeundae"]').click();
   assert.equal(document.querySelectorAll('.card').length, 9);
   document.querySelector('[data-city="jeju"]').click();
-  assert.equal(document.querySelectorAll('.card').length, 19);
+  assert.equal(document.querySelectorAll('.card').length, 22);
   assert.ok(document.querySelector('[data-area="seogwipo-si"]'));
   assert.equal(document.querySelector('[data-area="haeundae"]'), null);
   document.querySelector('[data-area="seogwipo-si"]').click();
@@ -80,7 +83,7 @@ test('도시별 후보·동네·건수가 바뀌며 다른 도시 필터가 남�
   assert.equal(document.querySelector('[data-city="jeju"]').getAttribute('aria-pressed'), 'true');
   assert.equal(document.querySelectorAll('.card').length, 8);
   document.querySelector('[data-city=""]').click();
-  assert.equal(document.querySelectorAll('.card').length, 95);
+  assert.equal(document.querySelectorAll('.card').length, 98);
 });
 test('검색 요약 상세는 실제 쿠폰 ID 확인으로 오인하지 않도록 출처를 구분한다', (t) => {
   const window = setup(t), document = window.document;
@@ -94,7 +97,7 @@ test('검색 요약 상세는 실제 쿠폰 ID 확인으로 오인하지 않도�
 
 test('모든 도시 카드와 상세에 한영 이름이 같은 순서로 표시되고 양쪽 이름으로 검색된다', (t) => {
   const window = setup(t), document = window.document;
-  assert.equal(document.querySelectorAll('.merchant-primary').length, 95);
+  assert.equal(document.querySelectorAll('.merchant-primary').length, 98);
   assert.ok([...document.querySelectorAll('.merchant-primary')].every((name) => name.lang === 'en' && !/[가-힣]/.test(name.textContent)));
   assert.ok([...document.querySelectorAll('.merchant-secondary')].every((name) => name.lang === 'ko' && /[가-힣]/.test(name.textContent)));
   for (const city of ['seoul', 'busan', 'jeju']) {
@@ -154,4 +157,37 @@ test('혜택 저장·저장목록·해제와 저장소 차단 상태가 동작�
   document.querySelector('[data-save]').click();
   assert.equal(document.querySelectorAll('.card').length, 0);
   assert.ok(document.querySelector('.empty'));
+});
+
+test('탐나오 선결제 상품은 후보 수와 분리하고 실제 가격·대기 조건을 표시한다', (t) => {
+  const window = setup(t), document = window.document;
+  assert.equal(document.querySelectorAll('.partner-product').length, 2);
+  assert.equal(document.querySelectorAll('.voucher-options li').length, 4);
+  assert.match(document.querySelector('.partner-section').textContent, /PREPAYMENT REQUIRED/);
+  assert.match(document.querySelector('.partner-section').textContent, /75,000/);
+  assert.match(document.querySelector('.partner-section').textContent, /3 hours after purchase/);
+  assert.match(document.querySelector('.partner-section').textContent, /phone requirements remain unconfirmed/);
+  document.querySelector('[data-city="busan"]').click();
+  assert.equal(document.querySelectorAll('.partner-product').length, 0);
+  document.querySelector('[data-city="jeju"]').click();
+  assert.equal(document.querySelectorAll('.partner-product').length, 2);
+});
+test('혜택 공유 링크는 언어와 해당 상세를 복원하며 복사 실패 시 직접 복사 내용을 제공한다', async (t) => {
+  const coupon = dataset.coupons.find((item) => item.merchant.area.city === 'busan');
+  const window = setup(t, false, buildOfferLink('https://rosagkim.github.io/travel/?v=old', coupon.id, 'ko'));
+  const document = window.document;
+  assert.equal(document.documentElement.lang, 'ko');
+  assert.ok(document.querySelector('dialog').open);
+  assert.equal(document.querySelector('[data-city="busan"]').getAttribute('aria-pressed'), 'true');
+  assert.equal(document.querySelector('.naver-map').href, coupon.merchant.placeUrl);
+  Object.defineProperty(window.navigator, 'clipboard', { value: undefined, configurable: true });
+  document.querySelector('#copy-name').click();
+  await Promise.resolve();
+  assert.equal(document.querySelector('.copy-fallback textarea').value, merchantNames[coupon.source.placeId].ko);
+  document.querySelector('#copy-link').click();
+  await Promise.resolve();
+  const link = new URL(document.querySelector('.copy-fallback textarea').value);
+  assert.equal(link.searchParams.get('offer'), coupon.id);
+  assert.equal(link.searchParams.get('lang'), 'ko');
+  assert.equal(link.searchParams.get('v'), null);
 });
