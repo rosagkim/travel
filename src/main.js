@@ -10,6 +10,7 @@ import { offerSignals, offerSummary, filterOfferSignals } from './lib/offer-disc
 import partnerOffers from '../data/partner-offers.json';
 import { optionSaving } from './lib/partner-offers.mjs';
 import { buildOfferLink, linkedOffer } from './lib/travel-links.mjs';
+import { validPoint, distanceKm, sortByDistance, distanceLabel } from './lib/nearby.mjs';
 
 const areaNames = { hongdae: ['Hongdae', '홍대'], yeonnam: ['Yeonnam', '연남'], hapjeong: ['Hapjeong', '합정'], mangwon: ['Mangwon', '망원'], gongdeok: ['Gongdeok', '공덕'], sinchon: ['Sinchon', '신촌'], haeundae: ['Haeundae · Centum', '해운대·센텀'], gwangalli: ['Gwangalli', '광안리'], 'jeju-si': ['Jeju City', '제주시'], 'seogwipo-si': ['Seogwipo', '서귀포시'], myeongdong: ['Myeongdong · Euljiro', '명동·을지로'], gangnam: ['Gangnam', '강남'], jongno: ['Jongno · Daehangno', '종로·대학로'], seomyeon: ['Seomyeon · Jeonpo', '서면·전포'], aewol: ['Aewol', '애월'], hallim: ['Hallim · Hyeopjae', '한림·협재'] };
 const cityNames = { seoul: ['Seoul', '서울'], busan: ['Busan', '부산'], jeju: ['Jeju', '제주'] };
@@ -24,6 +25,11 @@ Object.assign(copy.en, { allBenefits: 'All benefit types', allConditions: 'Any l
 Object.assign(copy.ko, { allBenefits: '모든 혜택 유형', allConditions: '모든 표시 조건', savedOnly: '내가 저장한 혜택', save: '저장', saved: '저장됨', translated: '수집 원문을 요약한 안내', originalKorean: '한국어 원문', signalsNote: '분류는 수집된 문구 기준입니다. 표시되지 않은 조건이 있을 수 있습니다.', sourcesTitle: '다른 곳에서도 혜택 찾기', sourcesIntro: '할인 정보를 더 찾아볼 수 있는 제공처입니다. 위 음식점 쿠폰 수에 포함하지 않습니다.', sourceLink: '제공처 둘러보기', localSaves: '이 기기에만 저장합니다. 저장은 쿠폰 발급이 아닙니다.', sourceUnknown: '유효기간과 조건은 제공처에서 다시 확인하세요.' });
 Object.assign(copy.en, { prepaidTitle: 'Jeju dining vouchers, with listed savings', prepaidIntro: 'Separate prepaid products from Tamnao. These are not free coupons and are not included in the restaurant listing count above.', prepaidBadge: 'PREPAYMENT REQUIRED', normalPrice: 'Listed normal price', salePrice: 'Listed sale price', saving: 'Save', relativeValidity: 'days from purchase', waitHours: 'hours after purchase before use', waitingUnknown: 'Waiting period not confirmed', providerCheckout: 'Check options at Tamnao', priceNotice: 'Prices and stock are snapshots, not a reservation. Recheck the current option, checkout requirements and conditions before buying.', observed: 'Price and terms checked', copyName: 'Copy Korean name', copyLink: 'Copy offer link', naverMap: 'Naver Maps', copied: 'Copied.', manualCopy: 'Copy the text below:', travelerUnknown: 'Foreigner account, phone and payment requirements are not confirmed.' });
 Object.assign(copy.ko, { prepaidTitle: '가격 차이를 확인한 제주 식사권', prepaidIntro: '탐나오의 별도 선결제 상품입니다. 무료 쿠폰이 아니며, 위 음식점 후보 수에 포함하지 않습니다.', prepaidBadge: '선결제 필요', normalPrice: '표시 정상가', salePrice: '표시 판매가', saving: '절약', relativeValidity: '일 · 구매일 기준', waitHours: '시간 이후 사용 가능', waitingUnknown: '구매 후 대기 시간 미확인', providerCheckout: '탐나오 옵션 확인', priceNotice: '확인 시점의 가격·재고이며 예약을 보장하지 않습니다. 구매 전 현재 옵션·결제 요건·이용 조건을 다시 확인하세요.', observed: '가격·조건 확인', copyName: '한국어 매장명 복사', copyLink: '혜택 링크 복사', naverMap: '네이버 지도', copied: '복사했습니다.', manualCopy: '아래 내용을 복사하세요:', travelerUnknown: '외국인 가입·전화번호·결제 요건은 미확인입니다.' });
+Object.assign(copy.en, { nearby: 'Use my location', refreshLocation: 'Refresh location', clearLocation: 'Clear location', locationLoading: 'Getting your location…', locationReady: 'Closest first · straight-line distance, not a walking route.', locationDenied: 'Location access was denied. You can still choose a city or area.', locationUnavailable: 'Location is unavailable. Please use the city and area filters.', locationTimeout: 'Location request timed out. Try again or choose an area.', locationPrivacy: 'Location is requested only when you tap the button. It stays in this page and is not saved or sent to our server.', straightLine: 'Straight-line distance' });
+Object.assign(copy.ko, { nearby: '내 위치로 가까운 순', refreshLocation: '위치 새로 확인', clearLocation: '위치 해제', locationLoading: '위치를 확인하고 있습니다…', locationReady: '가까운 순 · 도보 경로가 아닌 직선거리입니다.', locationDenied: '위치 접근이 거부됐습니다. 도시·지역 필터로 계속 찾을 수 있습니다.', locationUnavailable: '위치를 확인할 수 없습니다. 도시·지역 필터를 이용해 주세요.', locationTimeout: '위치 확인 시간이 초과됐습니다. 재시도하거나 지역을 선택하세요.', locationPrivacy: '버튼을 누를 때만 위치를 요청합니다. 위치는 이 페이지 안에서만 사용하며 저장하거나 서비스 서버에 전송하지 않습니다.', straightLine: '직선거리' });
+let locationPoint = null;
+let locationState = 'idle';
+let locationRequest = 0;
 let savedIds = new Set();
 try { const saved = JSON.parse(localStorage.getItem('korea-perks-saved') ?? '[]'); if (Array.isArray(saved)) savedIds = new Set(saved.filter((id) => typeof id === 'string')); } catch { /* Saving still works during this session. */ }
 let language = 'en';
@@ -71,7 +77,7 @@ function render() {
  <div class="offer-filter-panel"><label><span class="sr-only">${t.allBenefits}</span><select id="benefit"><option value="">${t.allBenefits}</option>${Object.keys(benefitNames).map((key) => `<option value="${key}" ${filters.benefit === key ? 'selected' : ''}>${label(benefitNames, key)}</option>`).join('')}</select></label><label><span class="sr-only">${t.allConditions}</span><select id="requirement"><option value="">${t.allConditions}</option>${Object.keys(conditionNames).map((key) => `<option value="${key}" ${filters.requirement === key ? 'selected' : ''}>${label(conditionNames, key)}</option>`).join('')}</select></label></div>
  <div class="area-list" aria-label="${t.allAreas}"><button data-area="" aria-pressed="${!filters.neighborhood}">${t.allAreas}</button>${neighborhoods.map((key) => `<button data-area="${key}" aria-pressed="${filters.neighborhood === key}">${label(areaNames, key)}</button>`).join('')}</div>
  <aside class="notice"><span class="notice-icon">i</span><div><strong>${t.notice}</strong><p>${t.noticeText}</p></div></aside>
- <div class="results-bar"><p id="result-count" role="status" aria-live="polite"></p><label class="verified-filter"><input id="saved-only" type="checkbox" ${filters.savedOnly ? 'checked' : ''}>${t.savedOnly}</label><label class="verified-filter"><input id="verified" type="checkbox" ${filters.verified ? 'checked' : ''}>${t.verified}</label></div><p class="filter-explanation">${t.signalsNote} ${t.localSaves}</p><div class="cards" id="cards"></div>${partnerOffersHtml(t)}${sourcesHtml(t)}</section></main>
+ <div class="results-bar"><p id="result-count" role="status" aria-live="polite"></p><label class="verified-filter"><input id="saved-only" type="checkbox" ${filters.savedOnly ? 'checked' : ''}>${t.savedOnly}</label><label class="verified-filter"><input id="verified" type="checkbox" ${filters.verified ? 'checked' : ''}>${t.verified}</label></div><div class="nearby-controls"><button type="button" id="nearby">${t.nearby}</button><button type="button" id="clear-location" hidden>${t.clearLocation}</button><p id="location-status" role="status" aria-live="polite"></p><small>${t.locationPrivacy}</small></div><p class="filter-explanation">${t.signalsNote} ${t.localSaves}</p><div class="cards" id="cards"></div>${partnerOffersHtml(t)}${sourcesHtml(t)}</section></main>
  <footer><a class="brand" href="./">${svg('star')}<span>korea<span class="brand-light">perks</span><i></i></span></a><p>${t.footer}</p><div><a href="${city?.discoveryUrl ?? config.collection.discoveryUrls[0]}" target="_blank" rel="noopener noreferrer">${t.source} ↗</a><small>${t.found} · ${new Date(dataset.collectedAt).toLocaleDateString(language === 'ko' ? 'ko-KR' : 'en-GB', { timeZone: 'Asia/Seoul' })}</small></div></footer><dialog id="detail"><button class="close" aria-label="${t.close}">×</button><div id="detail-content"></div></dialog>`;
  root.querySelectorAll('[data-language]').forEach((button) => button.addEventListener('click', () => { language = button.dataset.language; try { localStorage.setItem('korea-perks-language', language); } catch { /* Language still works without storage. */ } render(); }));
  root.querySelectorAll('[data-city]').forEach((button) => button.addEventListener('click', () => { filters.city = button.dataset.city; filters.neighborhood = ''; render(); root.querySelector(`[data-city="${filters.city}"]`).focus(); }));
@@ -82,6 +88,9 @@ function render() {
  root.querySelector('#benefit').addEventListener('change', (event) => { filters.benefit = event.target.value; renderCards(); });
  root.querySelector('#requirement').addEventListener('change', (event) => { filters.requirement = event.target.value; renderCards(); });
  root.querySelector('#saved-only').addEventListener('change', (event) => { filters.savedOnly = event.target.checked; renderCards(); });
+ root.querySelector('#nearby').addEventListener('click', requestNearby);
+ root.querySelector('#clear-location').addEventListener('click', () => { locationRequest++; locationPoint = null; locationState = 'idle'; updateLocationUi(); renderCards(); });
+ updateLocationUi();
  const dialog = root.querySelector('#detail');
  dialog.querySelector('.close').addEventListener('click', () => dialog.close());
  dialog.addEventListener('click', (event) => { if (event.target === dialog) { const r = dialog.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close(); } });
@@ -91,12 +100,13 @@ function render() {
 function renderCards() {
  const t = copy[language];
  const query = filters.query.trim().toLocaleLowerCase();
- const coupons = filterOfferSignals(filterCoupons(dataset.coupons, filters), { ...filters, savedIds }).filter((coupon) => (!filters.verified || publicationIssues(coupon, config.publication).length === 0) && (!query || [...merchantSearchNames(coupon, merchantNames), coupon.benefit.title, offerSummary(coupon, summaries, 'en'), label(areaNames, coupon.merchant.area.neighborhood), label(categories, coupon.merchant.category), label(cityNames, coupon.merchant.area.city), coupon.merchant.areaTextRaw ?? ''].some((value) => value.toLocaleLowerCase().includes(query))));
+ let coupons = filterOfferSignals(filterCoupons(dataset.coupons, filters), { ...filters, savedIds }).filter((coupon) => (!filters.verified || publicationIssues(coupon, config.publication).length === 0) && (!query || [...merchantSearchNames(coupon, merchantNames), coupon.benefit.title, offerSummary(coupon, summaries, 'en'), label(areaNames, coupon.merchant.area.neighborhood), label(categories, coupon.merchant.category), label(cityNames, coupon.merchant.area.city), coupon.merchant.areaTextRaw ?? ''].some((value) => value.toLocaleLowerCase().includes(query))));
+ if (locationPoint) coupons = sortByDistance(coupons, locationPoint);
  root.querySelector('#result-count').innerHTML = `<strong>${coupons.length}</strong> ${t.results}`;
  root.querySelector('#cards').innerHTML = coupons.length ? coupons.map((coupon, index) => {
   const verified = publicationIssues(coupon, config.publication).length === 0;
   const names = merchantNamePair(coupon.source.placeId, merchantNames, language);
-  return `<article class="card"><div class="card-top tone-${index % 4}"><span class="category">${escape(label(categories, coupon.merchant.category))}</span><span class="card-symbol" aria-hidden="true">${['✳', '✦', '❋', '✧'][index % 4]}</span><span class="area-label">${svg('pin')}${escape(label(cityNames, coupon.merchant.area.city))} · ${escape(label(areaNames, coupon.merchant.area.neighborhood))}</span></div><div class="card-body"><span class="status ${verified ? 'is-verified' : ''}"><i></i>${verified ? t.verifiedBadge : t.candidate}</span><h3 class="merchant-primary" lang="${names.primaryLanguage}">${escape(names.primary)}</h3><p class="merchant-secondary" lang="${names.secondaryLanguage}">${escape(names.secondary)}</p><p class="coupon-title" lang="${language}">${escape(offerSummary(coupon, summaries, language))}</p>${signalsHtml(coupon)}<button class="save-offer" data-save="${coupon.id}" aria-pressed="${savedIds.has(coupon.id)}">${savedIds.has(coupon.id) ? t.saved : t.save}</button><div class="card-bottom"><span>NAVER PLACE</span><button data-detail="${coupon.id}">${t.details}${svg('arrow')}</button></div></div></article>`;
+  return `<article class="card"><div class="card-top tone-${index % 4}"><span class="category">${escape(label(categories, coupon.merchant.category))}</span><span class="card-symbol" aria-hidden="true">${['✳', '✦', '❋', '✧'][index % 4]}</span><span class="area-label">${svg('pin')}${escape(label(cityNames, coupon.merchant.area.city))} · ${escape(label(areaNames, coupon.merchant.area.neighborhood))}</span>${locationPoint ? `<span class="card-distance" title="${t.straightLine}">${escape(distanceLabel(distanceKm(locationPoint, coupon.merchant.coordinates), language))}</span>` : ''}</div><div class="card-body"><span class="status ${verified ? 'is-verified' : ''}"><i></i>${verified ? t.verifiedBadge : t.candidate}</span><h3 class="merchant-primary" lang="${names.primaryLanguage}">${escape(names.primary)}</h3><p class="merchant-secondary" lang="${names.secondaryLanguage}">${escape(names.secondary)}</p><p class="coupon-title" lang="${language}">${escape(offerSummary(coupon, summaries, language))}</p>${signalsHtml(coupon)}<button class="save-offer" data-save="${coupon.id}" aria-pressed="${savedIds.has(coupon.id)}">${savedIds.has(coupon.id) ? t.saved : t.save}</button><div class="card-bottom"><span>NAVER PLACE</span><button data-detail="${coupon.id}">${t.details}${svg('arrow')}</button></div></div></article>`;
  }).join('') : `<div class="empty">${svg('search')}<h3>${t.empty}</h3><p>${t.emptyText}</p><button class="primary" id="reset">${t.reset}</button></div>`;
  root.querySelectorAll('[data-save]').forEach((button) => button.addEventListener('click', () => { const id = button.dataset.save; if (savedIds.has(id)) savedIds.delete(id); else savedIds.add(id); try { localStorage.setItem('korea-perks-saved', JSON.stringify([...savedIds])); } catch { /* Retain session state. */ } renderCards(); if (filters.savedOnly) root.querySelector('#saved-only')?.focus(); else root.querySelector(`[data-save="${id}"]`)?.focus(); }));
  root.querySelectorAll('[data-detail]').forEach((button) => button.addEventListener('click', () => openDetail(button.dataset.detail, button)));
@@ -116,6 +126,35 @@ function openDetail(id, trigger) {
  root.querySelector('#copy-link').addEventListener('click', () => copyDetailText(buildOfferLink(document.defaultView.location.href, coupon.id, language)));
  dialog.setAttribute('aria-labelledby', 'detail-title');
  dialog.showModal();
+}
+function updateLocationUi() {
+ const t = copy[language];
+ const button = root.querySelector('#nearby');
+ button.disabled = locationState === 'loading';
+ button.textContent = locationState === 'loading' ? t.locationLoading : locationPoint ? t.refreshLocation : t.nearby;
+ root.querySelector('#clear-location').hidden = !locationPoint && locationState !== 'loading';
+ root.querySelector('#location-status').textContent = ({ loading: t.locationLoading, ready: t.locationReady, denied: t.locationDenied, unavailable: t.locationUnavailable, timeout: t.locationTimeout })[locationState] ?? '';
+}
+function requestNearby() {
+ const requestId = ++locationRequest;
+ const geolocation = document.defaultView.navigator.geolocation;
+ if (!geolocation?.getCurrentPosition) { locationPoint = null; locationState = 'unavailable'; updateLocationUi(); renderCards(); return; }
+ locationState = 'loading'; updateLocationUi();
+ const fail = (error) => {
+  if (requestId !== locationRequest) return;
+  locationPoint = null;
+  locationState = error?.code === 1 ? 'denied' : error?.code === 3 ? 'timeout' : 'unavailable';
+  updateLocationUi(); renderCards();
+ };
+ try {
+  geolocation.getCurrentPosition((position) => {
+   if (requestId !== locationRequest) return;
+   const point = { latitude: position.coords.latitude, longitude: position.coords.longitude };
+   if (!validPoint(point)) { fail({ code: 2 }); return; }
+   locationPoint = point; locationState = 'ready';
+   updateLocationUi(); renderCards();
+  }, fail, { enableHighAccuracy: false, timeout: 10000, maximumAge: 60000 });
+ } catch { fail({ code: 2 }); }
 }
 async function copyDetailText(value) {
  const result = root.querySelector('#copy-result');

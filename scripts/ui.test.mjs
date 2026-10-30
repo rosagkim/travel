@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
 import { Window } from 'happy-dom';
 import { filterCoupons, publicationIssues } from '../src/lib/coupons.mjs';
+import { validPoint, distanceKm, sortByDistance, distanceLabel } from '../src/lib/nearby.mjs';
 import { optionSaving } from '../src/lib/partner-offers.mjs';
 import { buildOfferLink, linkedOffer } from '../src/lib/travel-links.mjs';
 const partnerOffers = JSON.parse(readFileSync(new URL('../data/partner-offers.json', import.meta.url)));
@@ -19,7 +20,7 @@ function setup(t, blockedStorage = false, url = 'https://rosagkim.github.io/trav
   const window = new Window({ url });
   window.document.body.innerHTML = '<div id="app"></div>';
   const storage = blockedStorage ? { getItem() { throw new Error('blocked'); }, setItem() { throw new Error('blocked'); } } : window.localStorage;
-  new Function('document', 'localStorage', 'dataset', 'config', 'filterCoupons', 'publicationIssues', 'merchantNames', 'merchantNamePair', 'merchantSearchNames', 'summaries', 'discountSources', 'offerSignals', 'offerSummary', 'filterOfferSignals', 'partnerOffers', 'optionSaving', 'buildOfferLink', 'linkedOffer', source)(window.document, storage, dataset, config, filterCoupons, publicationIssues, merchantNames, merchantNamePair, merchantSearchNames, summaries, discountSources, offerSignals, offerSummary, filterOfferSignals, partnerOffers, optionSaving, buildOfferLink, linkedOffer);
+  new Function('document', 'localStorage', 'dataset', 'config', 'filterCoupons', 'publicationIssues', 'merchantNames', 'merchantNamePair', 'merchantSearchNames', 'summaries', 'discountSources', 'offerSignals', 'offerSummary', 'filterOfferSignals', 'partnerOffers', 'optionSaving', 'buildOfferLink', 'linkedOffer', 'validPoint', 'distanceKm', 'sortByDistance', 'distanceLabel', source)(window.document, storage, dataset, config, filterCoupons, publicationIssues, merchantNames, merchantNamePair, merchantSearchNames, summaries, discountSources, offerSignals, offerSummary, filterOfferSignals, partnerOffers, optionSaving, buildOfferLink, linkedOffer, validPoint, distanceKm, sortByDistance, distanceLabel);
   t.after(() => window.happyDOM.abort());
   return window;
 }
@@ -161,8 +162,8 @@ test('혜택 저장·저장목록·해제와 저장소 차단 상태가 동작�
 
 test('탐나오 선결제 상품은 후보 수와 분리하고 실제 가격·대기 조건을 표시한다', (t) => {
   const window = setup(t), document = window.document;
-  assert.equal(document.querySelectorAll('.partner-product').length, 2);
-  assert.equal(document.querySelectorAll('.voucher-options li').length, 4);
+  assert.equal(document.querySelectorAll('.partner-product').length, 6);
+  assert.equal(document.querySelectorAll('.voucher-options li').length, 9);
   assert.match(document.querySelector('.partner-section').textContent, /PREPAYMENT REQUIRED/);
   assert.match(document.querySelector('.partner-section').textContent, /75,000/);
   assert.match(document.querySelector('.partner-section').textContent, /3 hours after purchase/);
@@ -170,7 +171,7 @@ test('탐나오 선결제 상품은 후보 수와 분리하고 실제 가격·�
   document.querySelector('[data-city="busan"]').click();
   assert.equal(document.querySelectorAll('.partner-product').length, 0);
   document.querySelector('[data-city="jeju"]').click();
-  assert.equal(document.querySelectorAll('.partner-product').length, 2);
+  assert.equal(document.querySelectorAll('.partner-product').length, 6);
 });
 test('혜택 공유 링크는 언어와 해당 상세를 복원하며 복사 실패 시 직접 복사 내용을 제공한다', async (t) => {
   const coupon = dataset.coupons.find((item) => item.merchant.area.city === 'busan');
@@ -190,4 +191,33 @@ test('혜택 공유 링크는 언어와 해당 상세를 복원하며 복사 실
   assert.equal(link.searchParams.get('offer'), coupon.id);
   assert.equal(link.searchParams.get('lang'), 'ko');
   assert.equal(link.searchParams.get('v'), null);
+});
+
+test('위치는 버튼을 누를 때만 요청하고 거리순·해제·거부·이전 응답 무시가 동작한다', (t) => {
+  const window = setup(t), document = window.document;
+  assert.equal(document.querySelectorAll('.card-distance').length, 0);
+  let requestCount = 0, success, failure;
+  Object.defineProperty(window.navigator, 'geolocation', { configurable: true, value: { getCurrentPosition(ok, fail) { requestCount++; success = ok; failure = fail; } } });
+  assert.equal(requestCount, 0);
+  document.querySelector('#nearby').click();
+  assert.equal(requestCount, 1);
+  assert.equal(document.querySelector('#nearby').disabled, true);
+  const target = dataset.coupons.find((coupon) => coupon.merchant.area.city === 'jeju');
+  success({ coords: target.merchant.coordinates });
+  assert.equal(document.querySelector('[data-detail]').dataset.detail, target.id);
+  assert.equal(document.querySelectorAll('.card-distance').length, 98);
+  assert.match(document.querySelector('#location-status').textContent, /straight-line/);
+  assert.equal(window.localStorage.getItem('location'), null);
+  document.querySelector('#clear-location').click();
+  assert.equal(document.querySelectorAll('.card-distance').length, 0);
+  assert.equal(document.querySelector('[data-detail]').dataset.detail, dataset.coupons[0].id);
+  document.querySelector('#nearby').click();
+  const staleSuccess = success;
+  document.querySelector('#clear-location').click();
+  staleSuccess({ coords: target.merchant.coordinates });
+  assert.equal(document.querySelectorAll('.card-distance').length, 0);
+  document.querySelector('#nearby').click();
+  failure({ code: 1 });
+  assert.match(document.querySelector('#location-status').textContent, /denied/);
+  assert.equal(document.querySelectorAll('.card').length, 98);
 });
